@@ -1,0 +1,1666 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{color-scheme:light}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Brazil Viagem</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Brazil: a sua agência de viagens. Pacotes prontos, excursões em grupo e roteiros sob medida.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@800;900&display=swap">
+<style>
+/* Layout: página única de vitrine. Faixa escura de busca no topo, vitrine clara abaixo, admin em painel utilitário. Uma coluna no celular. */
+:root{
+  --bg:#F3F8F7;--surface:#FFFFFF;--surface-2:#E8F1F0;--ink:#0D2830;--muted:#546C75;--line:#D3E1E1;
+  --primary:#07808F;--on-primary:#FFFFFF;--brand:#12D6E6;--head-bg:#05161B;--accent:#D9411A;--on-accent:#FFFFFF;--sun:#FFB627;
+  --wa:#0F7D41;--on-wa:#FFFFFF;--warn-bg:#FFF1D1;--warn-ink:#6B4500;--bad:#B3261E;--bad-bg:#FDE7E4;
+  --good-bg:#DDF3E6;--good-ink:#0F5C34;--hero-bg:#05161B;--hero-ink:#FFFFFF;--hero-muted:#BBD8DD;
+  --shadow:0 1px 2px rgba(7,59,73,.08),0 10px 28px rgba(7,59,73,.10);
+  --f-display:'Playfair Display',Georgia,'Times New Roman',serif;
+  --f-body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#08171C;--surface:#0F2229;--surface-2:#153039;--ink:#E7F2F3;--muted:#9BB5BC;--line:#21404A;
+  --primary:#2ED8E8;--on-primary:#03181C;--brand:#12D6E6;--head-bg:#05161B;--accent:#FF7B52;--on-accent:#2B0E05;--sun:#FFC247;
+  --wa:#34D27B;--on-wa:#062A15;--warn-bg:#3A2E10;--warn-ink:#FFD98A;--bad:#FF8A80;--bad-bg:#3B1815;
+  --good-bg:#12372A;--good-ink:#8FE3B6;--hero-bg:#031014;--shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.35);color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#08171C;--surface:#0F2229;--surface-2:#153039;--ink:#E7F2F3;--muted:#9BB5BC;--line:#21404A;
+  --primary:#2ED8E8;--on-primary:#03181C;--brand:#12D6E6;--head-bg:#05161B;--accent:#FF7B52;--on-accent:#2B0E05;--sun:#FFC247;
+  --wa:#34D27B;--on-wa:#062A15;--warn-bg:#3A2E10;--warn-ink:#FFD98A;--bad:#FF8A80;--bad-bg:#3B1815;
+  --good-bg:#12372A;--good-ink:#8FE3B6;--hero-bg:#031014;--shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.35);color-scheme:dark}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:60}
+img{display:block;max-width:100%}
+a{color:var(--primary)}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;letter-spacing:-.005em;line-height:1.18;text-wrap:balance;margin:0}
+p{margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.wrap{max-width:1180px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.narrow{max-width:720px}
+.sec{padding-block:44px}
+.sec-h{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.sec-h h2{font-size:clamp(1.3rem,3.6vw,1.9rem)}
+.sec-h p{color:var(--muted);margin-top:6px;max-width:56ch}
+.muted{color:var(--muted)}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--primary)}
+
+/* header */
+.site-head{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--surface);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;gap:10px;min-height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);margin-right:auto}
+.logo svg{width:34px;height:34px;flex:none}
+.logo-t{font:700 1.05rem/1 var(--f-display);letter-spacing:-.01em}
+.logo-t i{font-style:normal;color:var(--accent)}
+.logo-t small{display:block;font:600 .6rem/1 var(--f-body);letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+.nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);padding:8px max(16px,env(safe-area-inset-left,0px)) 14px;flex-direction:column;gap:2px}
+.nav[data-open]{display:flex}
+.nav a{padding:12px 10px;border-radius:10px;text-decoration:none;color:var(--ink);font-weight:600}
+.nav a[aria-current="page"]{background:var(--surface-2);color:var(--primary)}
+.menu-btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;width:44px;height:44px;display:grid;place-items:center;cursor:pointer}
+.head-cta{display:none}
+@media(min-width:900px){
+  .nav{display:flex;position:static;flex-direction:row;border:0;padding:0;background:none;gap:4px}
+  .nav a{padding:9px 14px}
+  .menu-btn{display:none}
+  .head-cta{display:inline-flex}
+}
+
+/* buttons, chips, fields */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:12px;border:1px solid transparent;font-weight:700;font-size:.97rem;cursor:pointer;text-decoration:none;line-height:1.2;min-height:46px;background:none}
+.btn-p{background:var(--primary);color:var(--on-primary)}
+.btn-a{background:var(--accent);color:var(--on-accent)}
+.btn-wa{background:var(--wa);color:var(--on-wa)}
+.btn-g{border-color:var(--line);color:var(--ink);background:var(--surface)}
+.btn-d{background:var(--bad-bg);color:var(--bad)}
+.btn-sm{padding:7px 12px;min-height:36px;font-size:.86rem;border-radius:10px}
+.btn.armed{background:var(--bad);color:#fff}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.btn-block{width:100%}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-size:.85rem;font-weight:600;color:var(--ink);text-decoration:none;cursor:pointer;line-height:1.2}
+.chip[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:var(--on-primary)}
+.tag{display:inline-block;padding:3px 9px;border-radius:999px;background:var(--surface-2);color:var(--ink);font-size:.76rem;font-weight:600}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.fld{display:flex;flex-direction:column;gap:6px;min-width:0}
+.fld>span{font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.fld small{color:var(--muted);font-size:.8rem}
+.in{width:100%;min-width:0;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);min-height:46px}
+textarea.in{min-height:90px;resize:vertical;line-height:1.45}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:.92rem}
+.chk input{margin-top:4px;width:18px;height:18px;flex:none}
+.err{color:var(--bad);font-size:.85rem;font-weight:600}
+
+/* hero */
+.hero{position:relative;background:var(--hero-bg);color:var(--hero-ink);overflow:hidden}
+.hero-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,22,27,.55),rgba(5,22,27,.9))}
+.hero-in{position:relative;z-index:1;padding-block:44px 34px;display:grid;gap:22px}
+.hero h1{font-size:clamp(1.9rem,6vw,3.3rem);max-width:16ch}
+.hero h1 i{font-style:normal;color:var(--brand)}
+.hero-sub{color:var(--hero-muted);max-width:52ch;font-size:1.05rem}
+.search{background:var(--surface);color:var(--ink);border-radius:18px;padding:16px;display:grid;gap:12px;box-shadow:var(--shadow)}
+@media(min-width:900px){.search{grid-template-columns:1.5fr 1fr 1fr 1fr auto;align-items:end;padding:18px}}
+.hero-chips{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:.9rem;color:var(--hero-muted)}
+.hero .chip{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3);color:#fff}
+
+/* cards */
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr))}
+.tcard,.pcard{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .18s,box-shadow .18s}
+.tcard:hover,.pcard:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.cover{position:relative;aspect-ratio:4/3;background:var(--surface-2);overflow:hidden}
+.cover img{width:100%;height:100%;object-fit:cover}
+.badges{position:absolute;left:10px;top:10px;display:flex;gap:6px;flex-wrap:wrap}
+.badge{background:rgba(7,59,73,.9);color:#fff;font-size:.74rem;font-weight:700;padding:4px 9px;border-radius:999px}
+.badge-warn{background:var(--sun);color:#3a2600}
+.tbody,.pbody{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tmeta{font-size:.82rem;color:var(--muted)}
+.tcard h3,.pcard h3{font-size:1.05rem;line-height:1.25}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.price{margin-top:auto;padding-top:6px}
+.price small{display:block;color:var(--muted);font-size:.78rem}
+.price b{font:700 1.4rem/1.1 var(--f-display);letter-spacing:-.005em}
+.price s{color:var(--muted);font-size:.85rem;margin-left:6px}
+.nxt{font-size:.82rem;color:var(--muted)}
+.pcard p{color:var(--muted);font-size:.92rem}
+.facts{font-size:.82rem;font-weight:600;color:var(--primary);margin-top:auto}
+
+/* departures */
+.deps{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.dep{display:grid;grid-template-columns:60px 1fr auto;gap:14px;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.dep:last-child{border-bottom:0}
+.dep:hover{background:var(--surface-2)}
+.dep-date{display:grid;place-items:center;background:var(--surface-2);border-radius:12px;padding:8px 0;font-family:var(--f-display);line-height:1.1}
+.dep-date b{font-size:1.25rem}.dep-date span{font-size:.7rem;text-transform:uppercase;color:var(--muted);font-family:var(--f-body);font-weight:700;letter-spacing:.08em}
+.dep h3{font-size:1rem}.dep p{font-size:.85rem;color:var(--muted)}
+.dep-side{text-align:right;display:flex;flex-direction:column;gap:4px;align-items:flex-end}
+.dep-side b{font-family:var(--f-display);font-size:1rem}
+@media(max-width:639px){.dep{grid-template-columns:56px 1fr}.dep-side{grid-column:2;align-items:flex-start;text-align:left}}
+
+/* bands */
+.band{background:var(--primary);color:var(--on-primary)}
+.band-in{display:grid;gap:22px;padding-block:40px;align-items:center}
+@media(min-width:900px){.band-in{grid-template-columns:1.2fr 1fr}}
+.band h2{font-size:clamp(1.3rem,3.6vw,1.9rem)}
+.band p{opacity:.92;margin-top:10px;max-width:52ch}
+.band ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.band li{padding-left:28px;position:relative;font-weight:600}
+.band li::before{content:"✓";position:absolute;left:0;font-weight:800}
+.band .btn-a{background:var(--sun);color:#3a2600}
+.band .btn-g{background:transparent;color:inherit;border-color:rgba(255,255,255,.5)}
+
+/* faq / details */
+.faq details,.acc details{border-bottom:1px solid var(--line);padding:4px 0}
+.faq summary,.acc summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px;padding:14px 0}
+.faq summary::-webkit-details-marker,.acc summary::-webkit-details-marker{display:none}
+.faq summary::after,.acc summary::after{content:"+";font-size:1.3rem;line-height:1;color:var(--primary)}
+.faq details[open] summary::after,.acc details[open] summary::after{content:"−"}
+.faq details p,.acc details p{padding:0 0 14px;color:var(--muted);max-width:68ch}
+
+/* list page */
+.page-head{background:var(--surface);border-bottom:1px solid var(--line);padding-block:30px}
+.page-head h1{font-size:clamp(1.5rem,4.5vw,2.3rem)}
+.page-head p{color:var(--muted);margin-top:8px;max-width:60ch}
+.list-layout{display:grid;gap:22px;padding-block:26px 50px}
+@media(min-width:960px){.list-layout{grid-template-columns:270px 1fr;align-items:start}.filters{position:sticky;top:84px}}
+.fbox{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.fbox>summary{font-weight:700;cursor:pointer;list-style:none;padding:2px 0}
+.fbox>summary::-webkit-details-marker{display:none}
+@media(min-width:960px){.fbox>summary{pointer-events:none}}
+.fgrid{display:grid;gap:14px;margin-top:14px}
+.count{font-weight:700;margin-bottom:14px}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:16px;padding:28px;display:grid;gap:12px;justify-items:start}
+.empty p{color:var(--muted);max-width:52ch}
+
+/* trip detail */
+.crumbs{font-size:.85rem;color:var(--muted);padding-block:16px}
+.crumbs a{color:var(--muted)}
+.trip{display:grid;gap:26px;padding-bottom:40px}
+@media(min-width:960px){.trip{grid-template-columns:1fr 350px;align-items:start}.buy{position:sticky;top:84px}}
+.trip h1{font-size:clamp(1.5rem,4.6vw,2.5rem);margin-bottom:12px}
+.hcover{aspect-ratio:16/9;border-radius:18px;overflow:hidden;margin-top:16px;background:var(--surface-2)}
+.hcover img{width:100%;height:100%;object-fit:cover}
+.qf{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-top:16px}
+.qf div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.qf small{display:block;color:var(--muted);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.qf b{font-size:.95rem}
+.blk{margin-top:30px}
+.blk h2{font-size:1.2rem;margin-bottom:12px}
+.blk p+p{margin-top:10px}
+.two{display:grid;gap:16px}
+@media(min-width:640px){.two{grid-template-columns:1fr 1fr}}
+.lst{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.lst li{padding-left:26px;position:relative}
+.lst.ok li::before{content:"✓";position:absolute;left:0;color:var(--wa);font-weight:800}
+.lst.no li::before{content:"✕";position:absolute;left:0;color:var(--bad);font-weight:800}
+.acc .when{font-size:.74rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--primary);display:block}
+.buy-box{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px;display:grid;gap:14px;box-shadow:var(--shadow)}
+.buy-box .big{font:700 1.8rem/1.1 var(--f-display);letter-spacing:-.005em}
+.buy-box .sm{font-size:.84rem;color:var(--muted)}
+.stepper{display:flex;align-items:center;gap:10px}
+.stepper button{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface);font-size:1.2rem;cursor:pointer}
+.stepper output{min-width:24px;text-align:center;font-weight:700}
+.pp{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.note{background:var(--warn-bg);color:var(--warn-ink);border-radius:12px;padding:12px 14px;font-size:.9rem;font-weight:600}
+.note-g{background:var(--good-bg);color:var(--good-ink)}
+.buybar{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--surface);border-top:1px solid var(--line);padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));display:flex;gap:12px;align-items:center;justify-content:space-between}
+.buybar small{display:block;color:var(--muted);font-size:.74rem}
+.buybar b{font:700 1.1rem var(--f-display)}
+@media(min-width:960px){.buybar{display:none}}
+body[data-route="viagem"] main{padding-bottom:84px}
+@media(min-width:960px){body[data-route="viagem"] main{padding-bottom:0}}
+.gcard{display:flex;gap:14px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;text-decoration:none;color:inherit}
+.gcard b{display:block}.gcard span{color:var(--muted);font-size:.88rem}
+
+/* guide */
+.answer{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--sun);border-radius:14px;padding:16px 18px;margin-top:18px}
+.answer h2{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-family:var(--f-body);font-weight:700;margin-bottom:8px}
+.answer dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0 0}
+.answer dt{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.answer dd{margin:2px 0 0;font-weight:700}
+.prose{max-width:70ch}
+.prose h2{font-size:1.25rem;margin:30px 0 10px}
+.prose p{margin-top:10px}
+.prose ul{margin:10px 0;padding-left:20px;display:grid;gap:6px}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface);max-width:560px}
+table.t{border-collapse:collapse;width:100%;font-size:.92rem}
+table.t th,table.t td{padding:9px 14px;text-align:left;border-bottom:1px solid var(--line)}
+table.t tr:last-child th,table.t tr:last-child td{border-bottom:0}
+table.t thead th{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.rain{display:inline-block;padding:2px 9px;border-radius:999px;font-size:.78rem;font-weight:700}
+.rain-0{background:var(--good-bg);color:var(--good-ink)}.rain-1{background:var(--surface-2)}.rain-2{background:var(--warn-bg);color:var(--warn-ink)}
+
+/* forms pages */
+.form-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px;display:grid;gap:16px}
+.g2{display:grid;gap:14px}
+@media(min-width:640px){.g2{grid-template-columns:1fr 1fr}}
+.pills{display:flex;gap:8px;flex-wrap:wrap}
+
+/* footer */
+.foot{background:var(--hero-bg);color:var(--hero-muted);margin-top:30px}
+.foot-in{display:grid;gap:26px;padding-block:36px}
+@media(min-width:760px){.foot-in{grid-template-columns:1.4fr 1fr 1fr}}
+.foot a{color:var(--hero-ink);text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.foot h4{margin:0 0 10px;color:var(--hero-ink);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.foot small{display:block;margin-top:14px;font-size:.8rem}
+.foot .logo{color:var(--hero-ink)}.foot .logo-t small{color:var(--hero-muted);margin-top:5px}
+.copyable{user-select:all}
+
+/* floating / toast */
+.wa-float{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;display:inline-flex;gap:8px;align-items:center;padding:12px 18px;border-radius:999px;background:var(--wa);color:var(--on-wa);font-weight:700;text-decoration:none;box-shadow:var(--shadow)}
+body[data-route="viagem"] .wa-float,body[data-route="admin"] .wa-float{display:none}
+@media(min-width:960px){body[data-route="viagem"] .wa-float{display:inline-flex}}
+.toast{position:fixed;left:50%;bottom:calc(90px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:11px 18px;border-radius:12px;font-weight:600;font-size:.92rem;opacity:0;pointer-events:none;transition:.2s;z-index:80;max-width:calc(100% - 32px)}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* admin */
+.adm-top{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-block:22px 6px}
+.adm-top h1{font-size:1.4rem}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:8px 0 12px;border-bottom:1px solid var(--line)}
+.tabs button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 16px;font-weight:700;cursor:pointer;white-space:nowrap}
+.tabs button[aria-selected="true"]{background:var(--primary);color:var(--on-primary);border-color:var(--primary)}
+.tabs .n{background:var(--accent);color:var(--on-accent);border-radius:999px;padding:0 7px;margin-left:6px;font-size:.78rem}
+.adm{padding-block:20px 60px;display:grid;gap:18px}
+.login{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;display:grid;gap:14px;margin-block:40px}
+.login h1{font-size:1.4rem}
+.stats{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
+.stat b{display:block;font:700 1.9rem/1 var(--f-display)}.stat span{color:var(--muted);font-size:.85rem}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;display:grid;gap:12px}
+.panel h2{font-size:1rem}
+.ritem{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.ritem:last-child{border-bottom:0}
+.ritem img{width:64px;height:48px;object-fit:cover;border-radius:8px}
+.ritem h3{font-size:.95rem;font-family:var(--f-body);font-weight:700;letter-spacing:0}
+.ritem .acts{grid-column:1/-1;display:flex;gap:6px;flex-wrap:wrap}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:.74rem;font-weight:700;background:var(--surface-2)}
+.pill-ok{background:var(--good-bg);color:var(--good-ink)}.pill-warn{background:var(--warn-bg);color:var(--warn-ink)}.pill-bad{background:var(--bad-bg);color:var(--bad)}
+.ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:.92rem}
+.rrow{display:grid;gap:8px;padding:12px;border:1px solid var(--line);border-radius:12px}
+.cgrid{display:grid;grid-template-columns:90px 1fr 1fr 1fr;gap:8px;align-items:center}
+.cgrid .in{min-height:38px;padding:6px 8px}
+.preview{width:100%;max-width:320px;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.bar{display:flex;gap:10px;flex-wrap:wrap;position:sticky;bottom:0;background:var(--bg);padding:12px 0}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+</head>
+<body>
+<style>
+/* ===== Abertura: janelas do avião, mergulho e destinos em seção fixa ===== */
+html.intro-lock,html.intro-lock body{overflow:hidden}
+body{font-variant-numeric:lining-nums}
+h1,h2,h3,h4,.logo-t{font-feature-settings:"lnum" 1}
+.intro{position:relative;background:#05161B;color:#fff;--ease:cubic-bezier(.7,0,.2,1);--ease-out:cubic-bezier(.16,1,.3,1)}
+.intro-track{position:relative;height:calc(100vh + 4*115vh);height:calc(100svh + 4*115svh)}
+.intro-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:#05161B;isolation:isolate}
+.i-layer{position:absolute;inset:0;will-change:transform,opacity}
+.i-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.i-sky{z-index:1}
+.i-sky .i-media{object-position:50% 50%}
+.i-sc0{z-index:2;opacity:0;transition:opacity 1.1s linear;background:#0b5d6b url(/brazil/assets/noronha.jpg) 28% 50%/cover no-repeat}
+.i-sc0 .i-media{object-position:28% 50%}
+.i-sc0.on{opacity:1}
+.i-sc{z-index:3;visibility:hidden;background-size:cover;background-repeat:no-repeat}
+.i-sc[data-i="1"]{background-image:url(/brazil/assets/gramado.jpg);background-position:46% 50%;z-index:3}
+.i-sc[data-i="2"]{background-image:url(/brazil/assets/lencois.jpg);background-position:64% 50%;z-index:4}
+.i-sc[data-i="3"]{background-image:url(/brazil/assets/bariloche.jpg);background-position:24% 50%;z-index:5}
+.i-sc[data-i="4"]{background-image:url(/brazil/assets/lisboa.jpg);background-position:38% 50%;z-index:6}
+.i-shade-g{position:absolute;inset:0;z-index:7;pointer-events:none;background:linear-gradient(180deg,rgba(4,30,38,.38) 0%,rgba(4,30,38,0) 24%,rgba(4,30,38,.12) 40%,rgba(4,30,38,.62) 66%,rgba(4,30,38,.92) 100%)}
+.i-mist{position:absolute;inset:-6%;z-index:8;opacity:0;pointer-events:none;background:url(/brazil/assets/nuvens.jpg) center/cover no-repeat;will-change:transform,opacity}
+/* nome do destino */
+.i-card{position:absolute;z-index:9;left:max(20px,env(safe-area-inset-left,0px));right:max(20px,env(safe-area-inset-right,0px));bottom:calc(max(26px,env(safe-area-inset-bottom,0px)) + 18px);max-width:1180px;margin:0 auto;pointer-events:none}
+.i-card-s{will-change:transform,opacity;display:grid;gap:12px;max-width:560px}
+.i-card.act{pointer-events:auto}
+.i-card.act .i-card-s{pointer-events:auto}
+.i-card[data-i="0"]{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease-out),transform 1.1s var(--ease-out)}
+.i-card[data-i="0"].is-in{opacity:1;transform:none}
+.i-kick{display:flex;gap:10px;align-items:center;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#7DF0F8}
+.i-kick b{display:inline-block;width:28px;height:2px;background:#12D6E6}
+.i-name{margin:0;font-family:var(--f-display);font-weight:600;font-size:clamp(2rem,6.4vw,4.6rem);line-height:1.02;letter-spacing:-.01em;text-wrap:balance;text-shadow:0 2px 22px rgba(0,0,0,.6),0 1px 3px rgba(0,0,0,.55)}
+.i-txt{margin:0;font-size:clamp(.98rem,1.5vw,1.14rem);line-height:1.5;max-width:44ch;color:rgba(255,255,255,.92);text-shadow:0 1px 12px rgba(0,0,0,.65),0 1px 2px rgba(0,0,0,.5)}
+.i-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.i-btn{appearance:none;border:0;cursor:pointer;font:inherit;font-weight:700;font-size:.95rem;padding:13px 20px;min-height:46px;border-radius:999px;background:#12D6E6;color:#031418;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:transform .25s var(--ease-out),background .2s}
+.i-btn:hover{transform:translateY(-2px);background:#5CE6F1}
+.i-btn.ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(6px)}
+.i-btn.ghost:hover{background:rgba(255,255,255,.24)}
+/* contador lateral */
+.i-count{position:absolute;z-index:10;right:max(18px,env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%);display:grid;gap:10px;justify-items:end;opacity:0;transition:opacity .8s;pointer-events:none}
+.i-count.is-in{opacity:1}
+.i-count i{display:block;width:3px;height:22px;border-radius:2px;background:rgba(255,255,255,.35);transition:background .3s,height .4s var(--ease-out)}
+.i-count i.on{background:#12D6E6;height:40px}
+/* topo */
+.i-top{position:absolute;z-index:12;left:0;right:0;top:0;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:calc(env(safe-area-inset-top,0px) + 14px) max(18px,env(safe-area-inset-right,0px)) 0 max(18px,env(safe-area-inset-left,0px))}
+.i-logo{font-family:var(--f-display);font-weight:600;font-size:1.05rem;letter-spacing:0;color:#fff;text-decoration:none;display:flex;align-items:center;gap:10px}
+.i-logo svg{width:30px;height:30px}
+.i-logo i{font-style:normal;color:#12D6E6}
+.i-skip{white-space:nowrap;appearance:none;cursor:pointer;font:inherit;font-weight:600;font-size:.85rem;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);padding:9px 16px;min-height:40px;border-radius:999px;backdrop-filter:blur(6px);transition:background .2s}
+.i-skip:hover{background:rgba(255,255,255,.26)}
+/* dica de rolagem */
+.i-hint{position:absolute;z-index:11;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:4px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.85);opacity:0;transition:opacity .8s;pointer-events:none}
+.i-hint.is-in{opacity:1}
+.i-hint svg{animation:ihint 1.6s ease-in-out infinite}
+@keyframes ihint{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+/* cabine (parede + janelas) */
+.i-cabin{position:absolute;inset:0;z-index:20;will-change:transform;transform-origin:50% 50%}
+.i-wall{position:absolute;inset:0;background:linear-gradient(90deg,#b4aea1 0%,#cfc9bc 16%,#d8d3c7 50%,#cfc9bc 84%,#b4aea1 100%);transition:opacity .9s linear;overflow:hidden}
+.i-wall::before{content:"";position:absolute;inset:0;background:radial-gradient(90% 70% at 50% 42%,rgba(255,250,238,.38),rgba(255,250,238,0) 70%),linear-gradient(180deg,rgba(255,255,255,0) 60%,rgba(40,32,22,.28) 100%)}
+.i-wall::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 100% at 50% 45%,rgba(0,0,0,0) 45%,rgba(30,24,16,.38) 100%);pointer-events:none}
+.i-ceil{position:absolute;left:-12%;right:-12%;top:-6%;height:15%;border-radius:0 0 50% 50%/0 0 100% 100%;background:linear-gradient(180deg,#a9a396,#cdc7ba);box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.i-ceil::after{content:"";position:absolute;left:8%;right:8%;bottom:3px;height:3px;border-radius:2px;background:#fff3d6;box-shadow:0 0 16px 4px rgba(255,226,170,.65)}
+.i-ledge{position:absolute;left:0;right:0;bottom:0;height:11%;background:linear-gradient(180deg,#9d978a,#7f796d);border-top:2px solid rgba(255,255,255,.35);box-shadow:0 -8px 20px rgba(0,0,0,.2)}
+.i-head{position:absolute;border-radius:48% 48% 0 0/34% 34% 0 0;background:repeating-linear-gradient(45deg,rgba(255,255,255,.035) 0 2px,rgba(0,0,0,0) 2px 4px),linear-gradient(100deg,#2b4f5b 0%,#173843 45%,#0f2a33 100%);box-shadow:inset 0 10px 18px rgba(255,255,255,.1),inset 0 -20px 30px rgba(0,0,0,.35),0 -6px 16px rgba(0,0,0,.25)}
+.i-head::after{content:"";position:absolute;left:50%;top:18%;bottom:0;width:2px;transform:translateX(-50%);background:rgba(0,0,0,.28);box-shadow:1px 0 0 rgba(255,255,255,.07)}
+.i-win{position:absolute;overflow:hidden;border-radius:36%/20%;box-shadow:0 0 0 7px #e9e5da,0 0 0 9px #c4beb0,0 0 0 10px rgba(70,60,45,.4),0 16px 34px rgba(0,0,0,.32),0 0 90px 12px rgba(140,180,235,.22);background:transparent}
+.i-win-fr{position:absolute;inset:0;border-radius:inherit;z-index:3;pointer-events:none;box-shadow:inset 0 0 0 6px #262b2f,inset 0 0 0 7px rgba(255,255,255,.12),inset 0 16px 28px rgba(0,0,0,.5);background:linear-gradient(115deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,.05) 22%,rgba(255,255,255,0) 23%)}
+.i-shade{position:absolute;inset:0;z-index:2;border-radius:inherit;background:linear-gradient(180deg,#f4f0e6 0%,#e9e4d7 70%,#ddd7c8 100%);box-shadow:inset 0 0 34px rgba(0,0,0,.14);transform:translateY(0);transition:transform .9s var(--ease)}
+.i-shade::before{content:"";position:absolute;left:0;right:0;bottom:0;height:10%;background:linear-gradient(180deg,#d6d0c1,#b7b0a0);border-top:1px solid rgba(255,255,255,.7)}
+.i-shade::after{content:"";position:absolute;left:36%;right:36%;bottom:3.6%;height:3.5%;border-radius:3px;background:linear-gradient(180deg,#8f887a,#aaa393);box-shadow:inset 0 1px 2px rgba(0,0,0,.35)}
+.i-cabin.up .i-shade{transform:translateY(-102%)}
+.i-cabin.fade .i-wall,.i-cabin.fade .i-win{opacity:0}
+.i-win{transition:opacity .9s linear}
+/* preloader */
+.i-pre{position:absolute;inset:0;z-index:30;background:#05161B;display:grid;place-content:center;justify-items:center;gap:18px;transition:opacity .8s linear}
+.i-pre.out{opacity:0;pointer-events:none}
+.i-pre .lg-pre{width:62px;height:68px}
+.i-pre p{margin:0;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+.i-bar{width:160px;height:3px;border-radius:2px;background:rgba(255,255,255,.2);overflow:hidden}
+.i-bar i{display:block;height:100%;width:100%;background:#12D6E6;transform-origin:0 50%;transform:scaleX(.04);transition:transform .5s var(--ease-out)}
+.i-done .i-cabin,.i-done .i-pre{display:none}
+@media(max-width:720px),(max-aspect-ratio:1/1){
+  .i-logo span{display:none}
+  .i-skip{font-size:.76rem;padding:8px 12px;min-height:38px}
+  .i-shade-g{background:linear-gradient(180deg,rgba(4,30,38,.4) 0%,rgba(4,30,38,0) 18%,rgba(4,30,38,.3) 34%,rgba(4,30,38,.68) 54%,rgba(4,30,38,.86) 74%,rgba(4,30,38,.92) 100%)}
+  .i-count{right:max(10px,env(safe-area-inset-right,0px))}
+  .i-card{bottom:calc(max(22px,env(safe-area-inset-bottom,0px)) + 44px)}
+  .i-win{box-shadow:0 0 0 6px #e9e5da,0 0 0 8px #c4beb0,0 0 0 9px rgba(70,60,45,.4),0 12px 26px rgba(0,0,0,.32),0 0 70px 8px rgba(140,180,235,.22)}
+  .intro-track{height:calc(100vh + 4*95vh);height:calc(100svh + 4*95svh)}
+}
+@media(prefers-reduced-motion:reduce){
+  .i-hint svg{animation:none}
+  .i-shade,.i-card[data-i="0"]{transition:none}
+}
+body:has(#intro) .wa-float{display:none}
+.foot-intro{background:none;border:0;color:inherit;font:inherit;text-decoration:underline;cursor:pointer;padding:0}
+</style>
+<style>
+/* ===== identidade visual: ciano sobre preto ===== */
+.site-head{background:var(--head-bg);border-bottom:1px solid rgba(18,214,230,.22)}
+.site-head .nav a{color:#E4F3F5}
+.site-head .nav a[aria-current="page"]{background:rgba(18,214,230,.14);color:var(--brand)}
+@media(max-width:759px){.site-head .nav{background:var(--head-bg);border-bottom:1px solid rgba(18,214,230,.22)}}
+.site-head .menu-btn{background:transparent;border-color:rgba(18,214,230,.4);color:#fff}
+.logo{--cap:22px;display:flex;flex-direction:column;align-items:flex-start;gap:5px;text-decoration:none;color:#fff;margin-right:auto}
+.lg{display:flex;align-items:flex-end;gap:2px;line-height:1}
+.logo .lg-svg,.lg-svg{display:block;height:var(--cap);width:calc(var(--cap)*4.34);flex:none}
+.lg-b{display:block;width:calc(var(--cap)*.91);height:var(--cap);flex:none}
+.lg-w{font:900 calc(var(--cap)/.7)/1 'Poppins','Arial Black',system-ui,sans-serif;letter-spacing:-.01em;margin-bottom:calc(var(--cap)*-.2);background:linear-gradient(180deg,#34EBF6,#07ABBE);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;padding-bottom:.02em}
+.lg-tag{font:700 .58rem/1 var(--f-body);letter-spacing:.09em;text-transform:uppercase;color:#fff;opacity:.92}
+.site-head .logo{--cap:24px}
+.foot .logo{--cap:30px;color:#fff}
+.i-top .logo{--cap:20px}
+@media(max-width:560px){.site-head .lg-tag{display:none}.site-head .logo{--cap:22px}}
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<linearGradient id="bvg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34EBF6"/><stop offset="1" stop-color="#07ABBE"/></linearGradient>
+<linearGradient id="bvg2" gradientUnits="userSpaceOnUse" x1="0" y1="5" x2="0" y2="63"><stop offset="0" stop-color="#34EBF6"/><stop offset="1" stop-color="#07ABBE"/></linearGradient>
+<mask id="bvm" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect width="64" height="64" fill="#fff"/>
+<g fill="#000"><path transform="translate(15 27) rotate(45) scale(.86) translate(-12 -12)" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/><path d="M2 47L10 38" stroke="#000" stroke-width="2.6" stroke-linecap="round" fill="none"/></g></mask>
+<path id="bv-bp" fill="url(#bvg)" fill-rule="evenodd" mask="url(#bvm)" d="M8 6H34C44 6 51 12 51 21C51 27 48 31 43 33C50 35 55 40 55 47C55 56 48 62 38 62H8Q4 62 4 58V10Q4 6 8 6ZM22 17V26H32C36 26 38 24 38 21.5C38 19 36 17 32 17ZM22 40V51H34C39 51 41 48.5 41 45.5C41 42.5 39 40 34 40Z"/>
+<g id="bv-az" fill="none" stroke="url(#bvg2)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"><path d="M67 55V13H80Q90 13 90 23Q90 31 80 31H67M81 31L92 55"/><path d="M109 55L127 13L145 55M116 43H138"/><path d="M160 13H190L160 55H192"/><path d="M207 13V55"/><path d="M222 13V55H248"/></g>
+</defs>
+<symbol id="bv-b" viewBox="3 5 53 58"><use href="#bv-bp"/></symbol>
+<symbol id="bv-logo" viewBox="3 5 252 58"><use href="#bv-bp"/><use href="#bv-az"/></symbol></svg>
+<section class="intro" id="intro" aria-label="Abertura: viagem até os destinos">
+  <div class="intro-track" id="i-track">
+    <div class="intro-stage" id="i-stage">
+      <div class="i-layer i-sky"><video class="i-media" id="i-v0" muted playsinline preload="auto" poster="/brazil/assets/janela.jpg"><source src="/brazil/assets/v0.webm" type="video/webm"><source src="/brazil/assets/v0.mp4" type="video/mp4"></video></div>
+      <div class="i-layer i-sc0" id="i-sc0"><video class="i-media" id="i-v1" muted playsinline preload="auto"><source src="/brazil/assets/v1.webm" type="video/webm"><source src="/brazil/assets/v1.mp4" type="video/mp4"></video></div>
+      <div class="i-layer i-sc" data-i="1"></div>
+      <div class="i-layer i-sc" data-i="2"></div>
+      <div class="i-layer i-sc" data-i="3"></div>
+      <div class="i-layer i-sc" data-i="4"></div>
+      <div class="i-shade-g"></div>
+      <div class="i-mist" id="i-mist"></div>
+
+      <div class="i-card" data-i="0"><div class="i-card-s">
+        <div class="i-kick">Pernambuco · Brasil</div>
+        <h2 class="i-name">Fernando de Noronha</h2>
+        <p class="i-txt">Mar turquesa, mergulho e as praias mais premiadas do país.</p>
+        <div class="i-cta"><button class="i-btn" type="button" data-dest="Fernando de Noronha">Ver viagens para Noronha</button></div>
+      </div></div>
+      <div class="i-card" data-i="1"><div class="i-card-s">
+        <div class="i-kick">Rio Grande do Sul · Brasil</div>
+        <h2 class="i-name">Gramado</h2>
+        <p class="i-txt">Serra gaúcha, chocolate quente e o clima de Natal o ano todo.</p>
+        <div class="i-cta"><button class="i-btn" type="button" data-dest="Gramado">Ver viagens para Gramado</button></div>
+      </div></div>
+      <div class="i-card" data-i="2"><div class="i-card-s">
+        <div class="i-kick">Maranhão · Brasil</div>
+        <h2 class="i-name">Lençóis Maranhenses</h2>
+        <p class="i-txt">Dunas brancas e lagoas de água cristalina que se formam após as chuvas.</p>
+        <div class="i-cta"><button class="i-btn" type="button" data-dest="Lençóis">Ver viagens para os Lençóis</button></div>
+      </div></div>
+      <div class="i-card" data-i="3"><div class="i-card-s">
+        <div class="i-kick">Patagônia · Argentina</div>
+        <h2 class="i-name">Bariloche</h2>
+        <p class="i-txt">Lagos, montanhas nevadas e a temporada de esqui nos Andes.</p>
+        <div class="i-cta"><button class="i-btn" type="button" data-dest="Bariloche">Ver viagens para Bariloche</button></div>
+      </div></div>
+      <div class="i-card" data-i="4"><div class="i-card-s">
+        <div class="i-kick">Portugal</div>
+        <h2 class="i-name">Lisboa</h2>
+        <p class="i-txt">Sete colinas, miradouros e o Tejo ao pôr do sol.</p>
+        <div class="i-cta"><button class="i-btn" type="button" data-dest="Lisboa">Ver viagens para Lisboa</button><button class="i-btn ghost" type="button" data-dest="">Todas as viagens</button></div>
+      </div></div>
+
+      <div class="i-count" id="i-count" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="i-hint" id="i-hint" aria-hidden="true">Role para explorar<svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+      <div class="i-cabin" id="i-cabin" aria-hidden="true"><div class="i-wall" id="i-wall"><div class="i-ceil"></div><div class="i-ledge"></div></div></div>
+      <div class="i-pre" id="i-pre"><svg class="lg-b lg-pre" aria-hidden="true"><use href="#bv-b"/></svg><p>Preparando sua viagem</p><div class="i-bar"><i id="i-bar"></i></div></div>
+
+      <div class="i-top">
+        <a class="logo i-logo" href="#inicio" data-intro-home aria-label="Brazil, a sua agência de viagens"><svg class="lg-svg" aria-hidden="true"><use href="#bv-logo"/></svg></a>
+        <span style="display:flex;gap:8px"><button class="i-skip" type="button" id="i-replay" hidden>↻ Rever</button><button class="i-skip" type="button" id="i-skip">Pular abertura</button></span>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="app">
+  <header class="site-head">
+    <div class="wrap">
+      <a class="logo" href="#inicio" aria-label="Brazil, a sua agência de viagens"><svg class="lg-svg" aria-hidden="true"><use href="#bv-logo"/></svg><small class="lg-tag">A sua agência de viagens</small></a>
+      <nav class="nav" id="nav" aria-label="Principal"></nav>
+      <a class="btn btn-wa btn-sm head-cta" id="head-cta" data-act="wa" data-id="geral" target="_blank" rel="noopener" href="#">Falar com a agência</a>
+      <button class="menu-btn" type="button" data-act="menu" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="foot" id="foot"></footer>
+</div>
+<a class="wa-float" id="wa-float" data-act="wa" data-id="geral" target="_blank" rel="noopener" href="#">
+  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4.2A8 8 0 1 1 8.4 19L4 20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+  <span id="wa-float-t">WhatsApp</span>
+</a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript>Este site precisa de JavaScript para funcionar.</noscript>
+<script>
+(function(){
+'use strict';
+/* ========== utilitários ========== */
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm=s=>String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().trim();
+const slug=s=>norm(s).replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
+const clone=o=>JSON.parse(JSON.stringify(o));
+const digits=s=>String(s||'').replace(/\D/g,'');
+const pad=n=>String(n).padStart(2,'0');
+const iso=d=>d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+const parseD=s=>{const p=String(s).split('-').map(Number);return new Date(p[0],p[1]-1,p[2])};
+const hoje=()=>iso(new Date());
+const addDays=n=>{const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()+n);return iso(d)};
+const MES=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+const MESL=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+const fmtData=s=>{const d=parseD(s);return d.getDate()+' '+MES[d.getMonth()]+' '+d.getFullYear()};
+const fmtLonga=s=>{const d=parseD(s);return d.getDate()+' de '+MESL[d.getMonth()]+' de '+d.getFullYear()};
+const brl=v=>{v=Number(v)||0;return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:Number.isInteger(v)?0:2,maximumFractionDigits:2})};
+const hash=s=>{let h=5381;s=String(s);for(let i=0;i<s.length;i++)h=((h<<5)+h+s.charCodeAt(i))|0;return Math.abs(h)};
+function rng(seed){let a=seed+1;return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const opts=(arr,sel)=>arr.map(a=>'<option value="'+esc(a[0])+'"'+(String(a[0])===String(sel)?' selected':'')+'>'+esc(a[1])+'</option>').join('');
+let toastT;
+function toast(m){const t=$('#toast');if(!t)return;t.textContent=m;t.classList.add('on');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('on'),3200)}
+
+/* ========== armazenamento (neste navegador) ========== */
+const K={db:'bv_db_v1',cfg:'bv_cfg_v1',ped:'bv_ped_v1',st:'bv_st_v1'};
+function load(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}}
+function save(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){toast('Não foi possível salvar. Se a foto for pesada, use uma menor.');return false}}
+const isAdmin=()=>{try{return sessionStorage.getItem('bv_admin')==='1'}catch(e){return false}};
+const setAdmin=on=>{try{on?sessionStorage.setItem('bv_admin','1'):sessionStorage.removeItem('bv_admin')}catch(e){}};
+
+/* ========== capas ilustradas (quando a viagem ainda não tem foto) ========== */
+const PAL={
+ praia:[['#264F7A','#F4A261','#FF6B3D'],['#1E4D6B','#FFB347','#FFD166'],['#3A3F7D','#F28C6B','#FFC857']],
+ dunas:[['#FFCF8B','#FFF0D2','#FF8A4C'],['#9AD1E8','#FFF2D8','#FFB84D'],['#F7B267','#FBE7C6','#E4572E']],
+ serra:[['#16254D','#E98A6B','#FFD27A'],['#1B2F5C','#F4A07C','#FFE19A'],['#2A2350','#D9778F','#FFD27A']],
+ cidade:[['#10305F','#F2A07B','#FFD66B'],['#1A2A5E','#F7B787','#FFE08A'],['#0F3B4C','#E9A27A','#FFD66B']],
+ cachoeira:[['#8FD3F4','#E6F7FF','#2F8F5B'],['#7CC6E8','#FFF3D6','#2F8F5B'],['#A5D8F2','#F0FBFF','#238A52']],
+ ilha:[['#2B5876','#F6A66B','#FFD27A'],['#3B4E8C','#F7A78D','#FFE0A3'],['#1F6C8F','#F8C291','#FFF1C1']]
+};
+const CENAS=[['praia','Praia'],['dunas','Dunas e lagoas'],['serra','Serra e frio'],['cidade','Cidade'],['cachoeira','Cachoeira'],['ilha','Ilha']];
+const lg=(id,st)=>'<linearGradient id="'+id+'" x1="0" y1="0" x2="0" y2="1">'+st.map(s=>'<stop offset="'+s[0]+'" stop-color="'+s[1]+'"/>').join('')+'</linearGradient>';
+function palm(x,y,s,d){
+  const tx=x+8*d*s,ty=y-170*s;
+  let f='';[-160,-130,-100,-70,-40,-10,20].forEach(a=>{const r=a*Math.PI/180,L=95*s;
+    f+='<path d="M'+tx+' '+ty+' Q'+(tx+L*Math.cos(r)*.6)+' '+(ty+L*Math.sin(r)*.6-34*s)+' '+(tx+L*Math.cos(r))+' '+(ty+L*Math.sin(r)+12*s)+'" stroke="#1F5F3A" stroke-width="'+(7*s)+'" stroke-linecap="round" fill="none"/>'});
+  return '<path d="M'+x+' '+y+' Q'+(x+22*d*s)+' '+(y-90*s)+' '+tx+' '+ty+'" stroke="#5B3A29" stroke-width="'+(9*s)+'" stroke-linecap="round" fill="none"/>'+f;
+}
+function sceneSVG(kind,seed){
+  const r=rng(seed),v=seed%3,P=(PAL[kind]||PAL.praia)[v],a=P[0],b=P[1],s=P[2];let c='';
+  if(kind==='dunas'){
+    c='<defs>'+lg('sk',[[0,a],[1,b]])+lg('lg',[[0,'#5DD6E8'],[1,'#1B9AB5']])+'</defs><rect width="800" height="600" fill="url(#sk)"/><circle cx="'+(520-r()*260)+'" cy="190" r="56" fill="'+s+'"/>'
+     +'<path d="M0 360Q180 290 360 340T800 320V600H0Z" fill="#E9B872"/><path d="M0 430Q220 380 430 430T800 410V600H0Z" fill="#D9A15A"/>'
+     +'<ellipse cx="250" cy="480" rx="190" ry="34" fill="url(#lg)"/><ellipse cx="570" cy="505" rx="150" ry="26" fill="url(#lg)" opacity=".9"/>'
+     +'<path d="M0 548Q200 508 420 542T800 526V600H0Z" fill="#C98A45"/>';
+  }else if(kind==='serra'){
+    const trees=(y,sc,col,n)=>Array.from({length:n},(_,i)=>{const x=(i+.5)*(800/n)+(r()-.5)*30,h=(80+r()*45)*sc,w=h*.52;
+      return '<path d="M'+x+' '+(y-h)+'L'+(x+w/2)+' '+(y-h*.45)+'H'+(x+w*.25)+'L'+(x+w*.45)+' '+y+'H'+(x-w*.45)+'L'+(x-w*.25)+' '+(y-h*.45)+'H'+(x-w/2)+'Z" fill="'+col+'"/>'}).join('');
+    let st='';for(let i=0;i<16;i++)st+='<circle cx="'+(r()*800)+'" cy="'+(r()*220)+'" r="'+(1+r()*1.6)+'" fill="#fff" opacity=".7"/>';
+    let li='';for(let i=0;i<14;i++){const x=40+i*52,y=330+Math.sin(i/2)*16;li+='<circle cx="'+x+'" cy="'+y+'" r="4" fill="'+(i%2?s:'#FF8A5B')+'"/>'}
+    c='<defs>'+lg('sk',[[0,a],[.8,b]])+'</defs><rect width="800" height="600" fill="url(#sk)"/>'+st
+     +'<path d="M0 400Q200 330 420 390T800 360V600H0Z" fill="#23406B"/>'+trees(470,.8,'#17334D',11)+li
+     +'<rect x="350" y="440" width="110" height="70" fill="#3A2B2E"/><path d="M335 442L405 395L475 442Z" fill="#6A2F2A"/><rect x="378" y="462" width="22" height="26" fill="'+s+'"/><circle cx="389" cy="475" r="40" fill="'+s+'" opacity=".18"/>'
+     +trees(600,1.15,'#0B2420',8);
+  }else if(kind==='cidade'){
+    let bl='',x=-10;
+    while(x<820){const w=50+r()*70,h=120+r()*260,col=['#0F2A44','#14355A','#1B4270'][Math.floor(r()*3)];
+      bl+='<rect x="'+x+'" y="'+(600-h)+'" width="'+w+'" height="'+h+'" fill="'+col+'"/>';
+      for(let wy=600-h+14;wy<585;wy+=24)for(let wx=x+8;wx<x+w-10;wx+=18)if(r()>.6)bl+='<rect x="'+wx+'" y="'+wy+'" width="7" height="10" fill="'+s+'" opacity=".85"/>';
+      x+=w+4}
+    c='<defs>'+lg('sk',[[0,a],[.75,b]])+'</defs><rect width="800" height="600" fill="url(#sk)"/><circle cx="'+(120+r()*140)+'" cy="170" r="46" fill="'+s+'" opacity=".95"/>'+bl;
+  }else if(kind==='cachoeira'){
+    let arcs='';['#FF6B6B','#FFB627','#7BD389','#4DA3FF'].forEach((col,k)=>{const R=250-k*8;arcs+='<path d="M'+(410-R)+' 410A'+R+' '+R+' 0 0 1 '+(410+R)+' 410" stroke="'+col+'" stroke-width="7" fill="none" opacity=".4"/>'});
+    let falls='';for(let i=0;i<7;i++){const x=170+i*62+r()*10,h=120+r()*80;falls+='<rect x="'+x+'" y="260" width="'+(24+r()*14)+'" height="'+h+'" rx="10" fill="#fff" opacity=".88"/>'}
+    let mist='';for(let i=0;i<7;i++)mist+='<circle cx="'+(180+i*66)+'" cy="'+(430+r()*12)+'" r="'+(36+r()*30)+'" fill="#fff" opacity=".45"/>';
+    c='<defs>'+lg('sk',[[0,a],[1,b]])+'</defs><rect width="800" height="600" fill="url(#sk)"/>'+arcs
+     +'<path d="M0 300Q200 230 400 280T800 250V600H0Z" fill="#5BAF86"/><path d="M110 270H700L720 420H90Z" fill="#3E5C4A"/>'+falls+mist
+     +'<path d="M0 470Q260 440 520 475T800 460V600H0Z" fill="#2A9DB5"/><ellipse cx="60" cy="590" rx="190" ry="110" fill="'+s+'"/><ellipse cx="770" cy="590" rx="210" ry="120" fill="'+s+'"/>';
+  }else if(kind==='ilha'){
+    const sx=200+r()*160;
+    c='<defs>'+lg('sk',[[0,a],[.7,b]])+lg('se',[[0,'#0E7C8F'],[1,'#064E5E']])+'</defs><rect width="800" height="600" fill="url(#sk)"/>'
+     +'<circle cx="'+sx+'" cy="340" r="110" fill="'+s+'" opacity=".28"/><circle cx="'+sx+'" cy="340" r="56" fill="'+s+'"/><rect y="380" width="800" height="220" fill="url(#se)"/>'
+     +'<path d="M470 400L490 320L504 270L520 316L540 400Z" fill="#243B3F"/><path d="M540 400L552 345L566 322L580 348L610 400Z" fill="#2F4A4C"/><ellipse cx="540" cy="402" rx="120" ry="12" fill="#C9E7EA" opacity=".5"/>'
+     +'<path d="M70 120q10-10 20 0q10-10 20 0M150 160q8-8 16 0q8-8 16 0M260 100q9-9 18 0q9-9 18 0" stroke="#1B2C33" stroke-width="3" fill="none"/>'
+     +'<path d="M0 560Q260 520 520 552T800 535V600H0Z" fill="#F2D6A2"/>';
+  }else{
+    const sx=260+r()*280;let rf='';for(let i=0;i<5;i++){const w=120-i*16;rf+='<rect x="'+(sx-w/2)+'" y="'+(372+i*22)+'" width="'+w+'" height="5" rx="2.5" fill="'+s+'" opacity="'+(.7-i*.1)+'"/>'}
+    c='<defs>'+lg('sk',[[0,a],[.7,b]])+lg('se',[[0,'#0E7C8F'],[1,'#064E5E']])+'</defs><rect width="800" height="600" fill="url(#sk)"/>'
+     +'<circle cx="'+sx+'" cy="330" r="130" fill="'+s+'" opacity=".28"/><circle cx="'+sx+'" cy="330" r="64" fill="'+s+'"/><rect y="360" width="800" height="240" fill="url(#se)"/>'+rf
+     +'<path d="M0 520Q220 470 470 505T800 495V600H0Z" fill="#F2D6A2"/><path d="M0 560Q260 525 520 552T800 540V600H0Z" fill="#E6C487"/>'+palm(650,505,1.1,-1)+palm(110,525,.8,1);
+  }
+  return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">'+c+'</svg>';
+}
+const sceneCache={};
+function sceneURI(kind,seed){const k=kind+seed;return sceneCache[k]||(sceneCache[k]='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(sceneSVG(kind,seed)))}
+const FOTOS={'fernando de noronha':'/brazil/assets/noronha.jpg','gramado':'/brazil/assets/gramado.jpg','lencois maranhenses':'/brazil/assets/lencois.jpg','lisboa':'/brazil/assets/lisboa.jpg','bariloche':'/brazil/assets/bariloche.jpg','maragogi':'/brazil/assets/maragogi.jpg','salvador':'/brazil/assets/salvador.jpg','jericoacoara':'/brazil/assets/jericoacoara.jpg','foz do iguacu':'/brazil/assets/foz-do-iguacu.jpg','buenos aires':'/brazil/assets/buenos-aires.jpg'};
+function capa(it){if(it&&it.imagem&&/^data:image\//.test(it.imagem))return it.imagem;const f=it&&FOTOS[norm(it.destino||'')];if(f)return f;return sceneURI((it&&it.cena)||'praia',hash((it&&(it.id||it.titulo))||'x')%3)}
+/* ========== dados iniciais: viagens ========== */
+const DEFAULT_COND=`Pagamento: as formas e o parcelamento são combinados na reserva. Cancelamento e remarcação seguem as regras das companhias aéreas, hotéis e demais fornecedores, e a agência informa prazos e multas antes do pagamento. Valores e disponibilidade podem mudar até a confirmação da reserva.`;
+const DOC_NAC=`Documento oficial com foto (RG ou CNH). Menores de 18 anos viajando sem pai ou mãe precisam de autorização de viagem; confirme as regras com a agência.`;
+const BASE_TAGS=['Para casal','Lua de mel','Família toda','Bom para crianças','Entre amigos','Melhor idade','Praia','Natureza','Aventura','Cultura e história','Gastronomia','Relax','Serra e frio','Feriado','Natal','Internacional','Luxo'];
+
+function seedViagens(){
+  const D=addDays,B={tipo:'pacote',pais:'Brasil',saida:'Fortaleza',transporte:'Aéreo',parcelas:10,precoRef:'por pessoa, em quarto duplo',vagas:'',validade:'',destaque:false,publicado:true,imagem:'',documentos:DOC_NAC,condicoes:DEFAULT_COND,precoOriginal:''};
+  const V=o=>Object.assign({},B,o);
+  return [
+  V({id:'salvador-praia-do-forte',titulo:'Salvador e Praia do Forte',destino:'Salvador',dias:6,noites:5,preco:3290,precoOriginal:3790,destaque:true,cena:'cidade',
+    datas:[D(40),D(75),D(110)],tags:['Para casal','Cultura e história','Gastronomia','Praia'],
+    descricao:`Seis dias para conhecer Salvador sem correria: o centro histórico com guia, a Cidade Baixa, o pôr do sol no Farol da Barra e dois dias na Praia do Forte, com visita ao Projeto Tamar e tempo livre para a praia.\nIndicado para casais e para quem gosta de história, música e comida baiana.`,
+    inclui:['Passagem aérea ida e volta','Traslados aeroporto, hotel e aeroporto','3 noites em Salvador e 2 noites em Praia do Forte, com café da manhã','City tour histórico com guia local','Visita ao Projeto Tamar'],
+    naoInclui:['Almoços e jantares','Ingressos não citados','Taxas municipais, se houver','Seguro viagem'],
+    roteiro:[{titulo:'Chegada e Pelourinho',texto:'Recepção no aeroporto e traslado ao hotel. Tarde livre. À noite, caminhada guiada pelo Pelourinho e jantar livre.'},
+      {titulo:'Centro histórico',texto:'City tour pela Cidade Alta e pela Cidade Baixa: Pelourinho, Igreja de São Francisco, Elevador Lacerda e Mercado Modelo. Fim de tarde no Farol da Barra.'},
+      {titulo:'Bonfim e Ribeira',texto:'Visita à Igreja do Senhor do Bonfim e passeio pela Ribeira. Tarde livre para praia, compras ou museus.'},
+      {titulo:'Rumo à Praia do Forte',texto:'Traslado até a Praia do Forte, cerca de 1h30 de viagem. Visita ao Projeto Tamar e tarde livre na praia.'},
+      {titulo:'Dia livre na Praia do Forte',texto:`Dia livre. Sugestões: piscinas naturais na maré baixa, passeio de bugue ou visita ao Castelo Garcia d'Ávila.`},
+      {titulo:'Volta para casa',texto:'Café da manhã, traslado ao aeroporto e voo de volta.'}]}),
+  V({id:'gramado-canela-natal-luz',titulo:'Gramado e Canela no Natal Luz',destino:'Gramado',dias:6,noites:5,preco:5490,parcelas:12,destaque:true,cena:'serra',
+    datas:['2026-12-04','2026-12-11','2027-01-08'],tags:['Família toda','Bom para crianças','Natal','Serra e frio'],
+    descricao:`Natal na serra gaúcha, com a cidade toda decorada. Cinco noites entre Gramado e Canela, com passeio pelas principais atrações e tempo livre para o chocolate quente, as lojas e a programação de Natal.\nÉ um roteiro pensado para quem viaja com crianças e para quem quer frio, luzes e boa comida.`,
+    inclui:['Passagem aérea ida e volta','Traslados','5 noites em hotel com café da manhã','Passeio pelas atrações de Gramado e Canela: Lago Negro, Rua Coberta, Mini Mundo e Parque do Caracol','Noite dedicada à programação de Natal'],
+    naoInclui:['Ingressos de parques e dos espetáculos do Natal Luz','Almoços e jantares','Seguro viagem'],
+    roteiro:[{titulo:'Chegada em Gramado',texto:'Voo até Porto Alegre, traslado até Gramado (cerca de 2h30) e check-in. Noite livre na Rua Coberta.'},
+      {titulo:'Gramado clássico',texto:'Passeio pela cidade: Lago Negro, Rua Torta, Mini Mundo e centro. Tarde livre.'},
+      {titulo:'Canela',texto:'Catedral de Pedra, Parque do Caracol e almoço livre. Volta a Gramado no fim da tarde.'},
+      {titulo:'Natal Luz',texto:'Dia livre. À noite, saída para a Vila de Natal e a programação de Natal da cidade.'},
+      {titulo:'Dia livre',texto:'Tempo livre para fábricas de chocolate, cafés coloniais e compras.'},
+      {titulo:'Volta para casa',texto:'Traslado a Porto Alegre e voo de volta.'}],
+    vagas:12,vagas:''}),
+  V({id:'jericoacoara-dunas-lagoas',titulo:'Jericoacoara: dunas, lagoas e pôr do sol',destino:'Jericoacoara',tipo:'excursao',dias:4,noites:3,preco:1890,parcelas:8,vagas:6,cena:'dunas',transporte:'Terrestre, com transfer até a vila',
+    datas:['2026-11-19',D(32),D(60),D(88)],tags:['Para casal','Entre amigos','Aventura','Praia','Feriado'],destaque:true,
+    descricao:`Excursão em grupo para Jericoacoara, com saída de Fortaleza. Três noites na vila, passeio de buggy pelas lagoas e as dunas, e o pôr do sol na Duna do Pôr do Sol.\nO grupo de novembro sai na quinta-feira do feriado de 20 de novembro e volta no domingo.`,
+    inclui:['Transfer de ida e volta saindo de Fortaleza','3 noites em pousada com café da manhã','Passeio de buggy: Lagoa Paraíso, Lagoa Azul e Pedra Furada','Coordenação da agência durante a viagem'],
+    naoInclui:['Almoços e jantares','Taxas de turismo e ingressos, quando cobrados','Passeios opcionais','Seguro viagem'],
+    roteiro:[{titulo:'Fortaleza a Jericoacoara',texto:'Saída de manhã, cerca de 5 a 6 horas por terra, com paradas. Check-in na pousada e fim de tarde livre.'},
+      {titulo:'Buggy pelas lagoas',texto:'Passeio de buggy pela Pedra Furada, Lagoa Paraíso e Lagoa Azul, com tempo para banho. À tarde, pôr do sol na duna.'},
+      {titulo:'Dia livre na vila',texto:'Dia livre para praia, compras e passeios opcionais, como stand up paddle ou kitesurf.'},
+      {titulo:'Volta',texto:'Café da manhã e retorno a Fortaleza, com chegada no fim da tarde.'}]}),
+  V({id:'lencois-maranhenses-barreirinhas',titulo:'Lençóis Maranhenses e Barreirinhas',destino:'Lençóis Maranhenses',dias:5,noites:4,preco:3980,cena:'dunas',
+    datas:['2027-06-25','2027-07-16','2027-08-13','2027-09-10'],tags:['Aventura','Entre amigos','Para casal','Natureza'],
+    descricao:`Cinco dias no Parque Nacional dos Lençóis Maranhenses, na época em que as lagoas estão cheias. Passeios de 4x4 pelas dunas, banho nas lagoas Azul e Bonita e navegação pelo Rio Preguiças.`,
+    inclui:['Passagem aérea ida e volta até São Luís','Traslados São Luís, Barreirinhas e São Luís','4 noites em Barreirinhas com café da manhã','Passeio às lagoas Azul e Bonita','Passeio de lancha pelo Rio Preguiças'],
+    naoInclui:['Almoços e jantares','Passeios opcionais, como Atins e sobrevoo','Seguro viagem'],
+    roteiro:[{titulo:'São Luís a Barreirinhas',texto:'Chegada em São Luís e traslado por terra até Barreirinhas, cerca de 3 a 4 horas.'},
+      {titulo:'Lagoa Azul e Lagoa Bonita',texto:'Passeio de 4x4 até as dunas, com tempo para banho nas lagoas e pôr do sol.'},
+      {titulo:'Rio Preguiças',texto:'Passeio de lancha com parada em Vassouras, Mandacaru e Caburé.'},
+      {titulo:'Dia livre',texto:'Dia livre ou passeio opcional até Atins.'},
+      {titulo:'Volta',texto:'Traslado a São Luís e voo de volta.'}]}),
+  V({id:'maragogi-galés',titulo:'Maragogi e as Galés',destino:'Maragogi',dias:5,noites:4,preco:3190,cena:'praia',
+    datas:[D(21),D(49),D(77)],tags:['Família toda','Bom para crianças','Praia','Relax'],destaque:true,
+    descricao:`Cinco dias de praia no Caribe brasileiro. O ponto alto é o passeio às Galés, as piscinas naturais de águas claras que aparecem na maré baixa, com tempo para flutuar e fazer snorkel.`,
+    inclui:['Passagem aérea ida e volta até Maceió','Traslados Maceió, Maragogi e Maceió, cerca de 2 horas por trecho','4 noites em hotel ou pousada com café da manhã','Passeio de catamarã às Galés'],
+    naoInclui:['Almoços e jantares','Taxas ambientais do passeio, quando cobradas','Seguro viagem'],
+    roteiro:[{titulo:'Chegada',texto:'Voo até Maceió e traslado até Maragogi. Tarde livre.'},
+      {titulo:'Galés',texto:'Passeio de catamarã às piscinas naturais, no horário da maré baixa.'},
+      {titulo:'Dia livre',texto:'Praia, passeio a São Miguel dos Milagres ou descanso.'},
+      {titulo:'Dia livre',texto:'Dia livre para aproveitar a praia e a vila.'},
+      {titulo:'Volta',texto:'Traslado a Maceió e voo de volta.'}]}),
+  V({id:'foz-do-iguacu-cataratas',titulo:'Foz do Iguaçu e as Cataratas',destino:'Foz do Iguaçu',dias:5,noites:4,preco:3480,cena:'cachoeira',
+    datas:[D(33),D(61),D(96)],tags:['Família toda','Bom para crianças','Natureza','Melhor idade'],
+    descricao:`Quatro noites em Foz do Iguaçu para ver as Cataratas pelo lado brasileiro, visitar o Parque das Aves e a usina de Itaipu. O lado argentino, com a Garganta do Diabo, pode ser incluído como passeio opcional.`,
+    inclui:['Passagem aérea ida e volta','Traslados','4 noites em hotel com café da manhã','Cataratas do Iguaçu, lado brasileiro','Parque das Aves','Visita panorâmica a Itaipu'],
+    naoInclui:['Cataratas, lado argentino (opcional)','Almoços e jantares','Seguro viagem'],
+    documentos:`RG em bom estado ou CNH para o lado brasileiro. Para o lado argentino, RG em bom estado (emitido há no máximo 10 anos) ou passaporte. Confirme as regras antes de viajar.`,
+    roteiro:[{titulo:'Chegada',texto:'Voo até Foz do Iguaçu, traslado ao hotel e tarde livre.'},
+      {titulo:'Cataratas, lado brasileiro',texto:'Trilha e passarelas com vista panorâmica das quedas. Tarde livre.'},
+      {titulo:'Parque das Aves e Itaipu',texto:'Pela manhã, Parque das Aves. À tarde, visita panorâmica à usina de Itaipu.'},
+      {titulo:'Lado argentino (opcional)',texto:'Dia inteiro no Parque Nacional Iguazú, com a Garganta do Diabo. Leve documento.'},
+      {titulo:'Volta',texto:'Traslado ao aeroporto e voo de volta.'}]}),
+  V({id:'buenos-aires-classico',titulo:'Buenos Aires clássico',destino:'Buenos Aires',pais:'Argentina',dias:6,noites:5,preco:5890,parcelas:12,cena:'cidade',
+    datas:[D(45),D(80),D(120)],tags:['Internacional','Para casal','Gastronomia','Cultura e história'],
+    descricao:`Seis dias em Buenos Aires com city tour, jantar com show de tango e tempo livre para livrarias, cafés e compras em Palermo.`,
+    inclui:['Passagem aérea internacional ida e volta','Traslados','5 noites em hotel com café da manhã','City tour: Plaza de Mayo, Recoleta, Palermo e La Boca','Jantar com show de tango'],
+    naoInclui:['Almoços e demais jantares','Passeio ao Tigre (opcional)','Seguro viagem'],
+    documentos:`RG em bom estado (emitido há no máximo 10 anos) ou passaporte válido. Confirme as regras de entrada antes de viajar.`,
+    roteiro:[{titulo:'Chegada',texto:'Traslado ao hotel e tarde livre. Sugestão: caminhada pela Avenida de Mayo.'},
+      {titulo:'City tour',texto:'Plaza de Mayo, Casa Rosada, Recoleta, Palermo e Caminito, em La Boca.'},
+      {titulo:'San Telmo',texto:'Dia livre. Aos domingos há feira de antiguidades em San Telmo.'},
+      {titulo:'Tigre (opcional)',texto:'Passeio opcional ao delta do Tigre, com navegação pelos canais.'},
+      {titulo:'Tango',texto:'Dia livre e, à noite, jantar com show de tango.'},
+      {titulo:'Volta',texto:'Traslado ao aeroporto e voo de volta.'}]}),
+  V({id:'lisboa-sintra',titulo:'Lisboa, Sintra e Cascais',destino:'Lisboa',pais:'Portugal',dias:8,noites:7,preco:8790,parcelas:12,cena:'cidade',
+    datas:[D(70),D(130),D(200)],tags:['Internacional','Cultura e história','Melhor idade','Gastronomia','Para casal'],
+    descricao:`Oito dias em Portugal para quem quer história, boa comida e passeios tranquilos. Base em Lisboa, com dias de Belém, Alfama, Sintra e Cascais.`,
+    inclui:['Passagem aérea internacional ida e volta','Traslados','7 noites em hotel com café da manhã','City tour em Lisboa','Passeio de dia inteiro a Sintra e Cascais','Seguro viagem internacional'],
+    naoInclui:['Almoços e jantares','Ingressos de palácios e monumentos','Transporte urbano'],
+    documentos:`Passaporte válido (recomendamos validade mínima de 6 meses). Brasileiros têm isenção de visto para turismo de até 90 dias; confira as exigências de entrada vigentes na data da viagem.`,
+    roteiro:[{quando:'Dia 1',titulo:'Chegada',texto:'Traslado ao hotel e tarde livre.'},
+      {quando:'Dia 2',titulo:'Baixa e Alfama',texto:'City tour pelos bairros históricos, miradouros e o Castelo de São Jorge.'},
+      {quando:'Dia 3',titulo:'Belém',texto:'Mosteiro dos Jerónimos, Torre de Belém e os famosos pastéis de nata.'},
+      {quando:'Dia 4',titulo:'Sintra e Cascais',texto:'Passeio de dia inteiro pela vila de Sintra, Cabo da Roca e Cascais.'},
+      {quando:'Dias 5 a 7',titulo:'Tempo livre',texto:'Dias livres para Oceanário, Parque das Nações, compras e passeios opcionais, como Óbidos.'},
+      {quando:'Dia 8',titulo:'Volta',texto:'Traslado ao aeroporto e voo de volta.'}]}),
+  V({id:'fernando-de-noronha',titulo:'Fernando de Noronha',destino:'Fernando de Noronha',dias:5,noites:4,preco:7490,parcelas:12,vagas:4,cena:'ilha',
+    datas:[D(55),D(90),D(160)],tags:['Lua de mel','Para casal','Aventura','Praia','Luxo'],destaque:true,
+    descricao:`Quatro noites em pousada na ilha, com passeio de barco pelo Mar de Dentro, praias do Sancho e dos Porcos e tempo para mergulho livre. Um roteiro para quem quer descanso e natureza preservada.`,
+    inclui:['Passagem aérea ida e volta','Traslados','4 noites em pousada com café da manhã','Passeio de barco','Passeio terrestre pela ilha'],
+    naoInclui:['Taxa de Preservação Ambiental (TPA) e ingresso do Parque Nacional Marinho','Mergulho de cilindro','Almoços e jantares','Seguro viagem'],
+    roteiro:[{titulo:'Chegada',texto:'Voo até a ilha, taxas de entrada, orientações e traslado à pousada.'},
+      {titulo:'Passeio de barco',texto:'Passeio pelo Mar de Dentro, com paradas para banho e observação de golfinhos, quando possível.'},
+      {titulo:'Praias',texto:'Baía do Sancho e Baía dos Porcos. Trilha e escada até o Sancho exigem condicionamento básico.'},
+      {titulo:'Passeio terrestre',texto:'Forte dos Remédios, Praia do Leão e mirantes. A Praia do Atalaia exige agendamento.'},
+      {titulo:'Volta',texto:'Traslado ao aeroporto e voo de volta.'}]})
+  ].map(v=>{v.vagas=v.vagas===undefined?'':v.vagas;if(v.id==='gramado-canela-natal-luz')v.vagas='';v.id=slug(v.id);return v});
+}
+/* ========== dados iniciais: guias de destino ========== */
+function seedPosts(){
+  const D=addDays;
+  return [
+  {id:'salvador-melhor-epoca',titulo:'Salvador: melhor época para viajar, clima e o que fazer',destino:'Salvador',cena:'cidade',data:D(-12),publicado:true,
+   resumo:'Quando ir a Salvador, temperatura média ao longo do ano, época de chuva e quantos dias reservar para conhecer a cidade.',
+   respostaRapida:'A melhor época para ir a Salvador é de setembro a março, quando chove menos e o calor ajuda a aproveitar as praias. A temperatura fica entre 24 °C e 30 °C na maior parte do ano. De abril a junho chove mais. Reserve de 4 a 6 dias.',
+   melhorEpoca:'Setembro a março',tempMedia:'24 °C a 30 °C',
+   clima:[[24,30,1],[24,31,1],[24,31,1],[23,30,2],[22,29,2],[21,28,2],[21,27,1],[21,27,1],[21,28,0],[22,29,0],[23,29,1],[23,30,1]],
+   corpo:`## Quando ir
+Salvador tem clima tropical quente o ano todo, então não existe uma época ruim. O que muda é a chuva e o movimento. De setembro a março o tempo é mais firme e o mar é mais convidativo. O pico de movimento vai de dezembro até o Carnaval.
+
+## Época de chuva
+Os meses mais chuvosos são abril, maio e junho. A chuva costuma vir em pancadas fortes que passam rápido, mas atrapalham passeios de praia e de saveiro. Em compensação, as diárias de hotel costumam ser mais baixas.
+
+## Festas que mudam a viagem
+- Festa de Iemanjá, em 2 de fevereiro, no Rio Vermelho.
+- Carnaval, em fevereiro ou março conforme o ano. Lota a cidade e encarece tudo, então reserve com meses de antecedência.
+- Lavagem do Bonfim, em meados de janeiro.
+- Dois de Julho, a festa da Independência da Bahia.
+
+## Quantos dias ficar
+Para o centro histórico, a Cidade Baixa e as praias urbanas, 4 dias bastam. Com 6 dias dá para incluir um ou dois dias na Praia do Forte.
+
+## O que levar
+Roupas leves, protetor solar, chinelo e uma capa de chuva fina. Para o Pelourinho, calçado confortável: as ladeiras são íngremes.`,
+   faq:[{q:'Qual é o mês mais chuvoso em Salvador?',a:'Abril e maio costumam ter mais chuva, e junho também tem muitas pancadas.'},
+        {q:'Salvador é boa para ir em julho?',a:'Sim. Julho tem temperaturas mais amenas, entre 21 °C e 27 °C, e a cidade comemora o Dois de Julho. A chuva ainda aparece, mas é mais leve que em abril e maio.'},
+        {q:'Precisa de passaporte para ir a Salvador?',a:'Não. É viagem dentro do Brasil e basta um documento oficial com foto.'}]},
+  {id:'gramado-melhor-epoca',titulo:'Gramado: melhor época, frio e Natal Luz',destino:'Gramado',cena:'serra',data:D(-9),publicado:true,
+   resumo:'Quando ir a Gramado para pegar frio, flores ou o Natal Luz, com a temperatura de cada estação e dicas para planejar.',
+   respostaRapida:'Gramado é boa o ano todo. Para frio, vá de junho a agosto, com mínimas perto de 4 °C. Para o Natal Luz, de novembro a janeiro. Abril, maio e setembro têm clima ameno e menos filas. Reserve de 3 a 4 dias.',
+   melhorEpoca:'Junho a agosto (frio) ou novembro a janeiro (Natal)',tempMedia:'4 °C a 25 °C',
+   clima:[[14,25,1],[14,25,1],[12,23,1],[9,20,1],[6,17,1],[4,14,1],[4,14,1],[5,16,1],[7,17,1],[9,20,1],[11,22,1],[13,24,1]],
+   corpo:`## Inverno, de junho a agosto
+É a época do frio de verdade, com mínimas em torno de 4 °C e geadas frequentes. A neve é rara e imprevisível, então não planeje a viagem apostando nela. Hotéis lotam em julho e nos feriados: reserve com antecedência.
+
+## Natal Luz, de novembro a janeiro
+A cidade fica decorada e a programação de Natal movimenta Gramado e Canela. As datas mudam a cada edição, então confirme antes de comprar passagens. É a época mais procurada por famílias.
+
+## Primavera e verão
+Os dias são agradáveis, com máximas perto de 25 °C, e as noites ainda são frescas. É a melhor fase para quem quer caminhar, ver as hortênsias e evitar o frio forte.
+
+## Quantos dias ficar
+Três dias cobrem Gramado. Com quatro ou cinco dá para incluir Canela e os parques com calma.
+
+## O que levar
+Casaco, gorro e luvas no inverno. Em qualquer estação, guarda-chuva: a chuva é bem distribuída ao longo do ano.`,
+   faq:[{q:'Neva em Gramado?',a:'É raro e imprevisível. Acontece em poucos invernos, por poucas horas. Vá pelo frio, pelos hotéis e pela gastronomia, e trate a neve como bônus.'},
+        {q:'Quando é o Natal Luz?',a:'A programação costuma começar no fim do ano e ir até janeiro. As datas variam a cada edição.'},
+        {q:'Preciso reservar com antecedência?',a:'Sim, principalmente para o Natal Luz, o inverno e os feriados. Em alta temporada, reserve com alguns meses de antecedência.'}]},
+  {id:'fernando-de-noronha-quando-ir',titulo:'Fernando de Noronha: quando ir, clima e taxas',destino:'Fernando de Noronha',cena:'ilha',data:D(-7),publicado:true,
+   resumo:'Melhor época para Fernando de Noronha, temperatura, época de chuva, mergulho e as taxas que você precisa prever.',
+   respostaRapida:'A melhor época para Fernando de Noronha é de agosto a dezembro: pouca chuva e mar de águas claras. A temperatura fica entre 24 °C e 30 °C o ano todo. De fevereiro a julho chove mais, e os preços costumam cair. Reserve de 4 a 5 dias.',
+   melhorEpoca:'Agosto a dezembro',tempMedia:'24 °C a 30 °C',
+   clima:[[25,30,1],[25,30,1],[24,30,2],[24,30,2],[24,30,2],[24,29,2],[23,29,2],[23,29,1],[24,29,0],[24,30,0],[25,30,0],[25,30,0]],
+   corpo:`## Quando ir
+O período seco vai de agosto a dezembro. O céu abre mais, o mar fica mais claro e o mergulho tem melhor visibilidade. É também quando as passagens e pousadas ficam mais procuradas.
+
+## Época de chuva
+A chuva se concentra de fevereiro a julho, com pico entre março e maio. As pancadas costumam ser curtas. Em troca, os preços tendem a ser menores.
+
+## Ondas e mar
+De dezembro a março o Mar de Fora recebe ondas maiores, boas para surfe. Nos outros meses o Mar de Dentro costuma estar mais calmo para banho e mergulho.
+
+## Taxas e regras
+A ilha cobra a Taxa de Preservação Ambiental por dia de permanência, e há o ingresso do Parque Nacional Marinho. Os valores são reajustados, então confira o valor vigente antes de viajar. Algumas praias, como a do Atalaia, exigem agendamento.
+
+## Quantos dias ficar
+Quatro ou cinco dias permitem fazer os passeios de barco e de terra com calma. As pousadas lotam: reserve cedo.`,
+   faq:[{q:'Qual a melhor época para mergulhar em Noronha?',a:'De agosto a dezembro, quando a visibilidade costuma ser melhor e a chuva é menor.'},
+        {q:'Precisa de passaporte para Fernando de Noronha?',a:'Não. É destino nacional e basta documento oficial com foto.'},
+        {q:'Vale ir na baixa temporada?',a:'Vale, se você aceitar alguma chuva. As pancadas costumam ser rápidas e os preços de passagem e hospedagem tendem a cair.'}]},
+  {id:'jericoacoara-melhor-epoca',titulo:'Jericoacoara: melhor época, vento e lagoas',destino:'Jericoacoara',cena:'dunas',data:D(-5),publicado:true,
+   resumo:'Quando ir a Jericoacoara: melhor época para vento e sol, quando as lagoas enchem e como se programar.',
+   respostaRapida:'O melhor período para Jericoacoara é de julho a janeiro: chove pouco e o vento é forte e constante. As lagoas ficam cheias de abril a agosto, depois das chuvas. A temperatura fica entre 24 °C e 32 °C o ano todo. Chove mais de fevereiro a maio. Reserve de 3 a 4 dias.',
+   melhorEpoca:'Julho a janeiro',tempMedia:'24 °C a 32 °C',
+   clima:[[24,31,1],[24,31,2],[24,31,2],[24,31,2],[24,30,2],[23,30,1],[23,30,0],[23,31,0],[24,31,0],[24,32,0],[24,32,0],[24,32,0]],
+   corpo:`## Quando ir
+De julho a janeiro o tempo é firme, com pouca chuva e vento forte, que atrai quem pratica kitesurf e windsurf. Para quem quer sol garantido, de agosto a dezembro é a melhor janela.
+
+## Lagoas cheias
+As lagoas ficam mais cheias e bonitas depois das chuvas, de abril a agosto. De setembro a dezembro o nível baixa. O passeio continua valendo, mas com menos água.
+
+## Época de chuva
+Chove mais de fevereiro a maio. A chuva ajuda a encher as lagoas e deixa a paisagem verde, mas pode atrapalhar passeios.
+
+## Como chegar
+De Fortaleza são cerca de 5 a 6 horas por terra. O trecho final até a vila costuma ser feito em veículo adequado ao terreno. Por isso, o transfer organizado facilita.
+
+## O que fazer
+O pôr do sol na Duna do Pôr do Sol é o programa mais clássico. O passeio de buggy leva à Pedra Furada, à Lagoa Paraíso e à Lagoa Azul.`,
+   faq:[{q:'É melhor ir na época do vento ou da chuva?',a:'Depende do objetivo. Para sol e vento, de julho a janeiro. Para lagoas mais cheias, de abril a agosto.'},
+        {q:'Quantos dias ficar em Jericoacoara?',a:'Três ou quatro dias bastam para o buggy, o pôr do sol na duna e um dia livre na vila.'},
+        {q:'As lagoas secam?',a:'O nível baixa de setembro a dezembro, quando chove pouco. O passeio continua, mas com menos água.'}]},
+  {id:'lencois-maranhenses-melhor-epoca',titulo:'Lençóis Maranhenses: melhor época para ver as lagoas cheias',destino:'Lençóis Maranhenses',cena:'dunas',data:D(-4),publicado:true,
+   resumo:'Em que meses as lagoas dos Lençóis Maranhenses estão cheias, temperatura média e como planejar a viagem.',
+   respostaRapida:'A melhor época para ver as lagoas cheias nos Lençóis Maranhenses é de julho a setembro, logo depois da estação de chuvas, que vai de janeiro a junho. A temperatura fica entre 23 °C e 34 °C. De outubro a dezembro as lagoas secam e a paisagem muda. Reserve de 3 a 5 dias.',
+   melhorEpoca:'Julho a setembro',tempMedia:'23 °C a 34 °C',
+   clima:[[24,32,2],[24,32,2],[24,31,2],[24,32,2],[24,32,2],[23,32,1],[23,32,0],[23,33,0],[24,34,0],[24,34,0],[24,34,0],[24,33,1]],
+   corpo:`## Como as lagoas se formam
+A chuva se acumula entre as dunas e forma lagoas de água clara. Por isso a época do passeio depende do fim da estação chuvosa.
+
+## Melhor período
+De julho a setembro as lagoas estão no ponto mais cheio e o tempo já é seco. Junho já tem boas lagoas, mas ainda pode chover.
+
+## Chuva e baixa temporada
+De janeiro a junho chove bastante, e no início do ano as lagoas ainda estão se formando. Em outubro a dezembro a água diminui e muitas lagoas secam.
+
+## Quantos dias ficar
+Três dias cobrem as lagoas Azul e Bonita e o Rio Preguiças. Com cinco dá para incluir Atins e outros passeios.
+
+## Como chegar
+O acesso mais comum é por São Luís, de onde se segue por terra até Barreirinhas, cerca de 3 a 4 horas.`,
+   faq:[{q:'Em que mês as lagoas estão cheias?',a:'De julho a setembro as lagoas costumam estar no ponto mais cheio.'},
+        {q:'Dá para ir em janeiro ou fevereiro?',a:'Dá, mas é época de chuva e as lagoas ainda estão se formando.'},
+        {q:'Pode tomar banho nas lagoas?',a:'Sim, nas lagoas dos passeios a água é rasa e o banho é permitido. Siga as orientações do guia e do parque.'}]},
+  {id:'foz-do-iguacu-melhor-epoca',titulo:'Foz do Iguaçu: melhor época e como visitar as Cataratas',destino:'Foz do Iguaçu',cena:'cachoeira',data:D(-3),publicado:true,
+   resumo:'Melhor época para visitar as Cataratas do Iguaçu, clima por estação, lado brasileiro e argentino e documentos.',
+   respostaRapida:'As Cataratas do Iguaçu podem ser visitadas o ano todo. De novembro a março faz calor, com máximas perto de 32 °C. De junho a agosto o clima é ameno, com mínimas perto de 11 °C. Março a maio e setembro a novembro têm temperaturas agradáveis. Reserve de 3 a 4 dias.',
+   melhorEpoca:'Março a maio e setembro a novembro',tempMedia:'11 °C a 32 °C',
+   clima:[[21,32,1],[21,32,1],[20,31,1],[17,28,1],[14,24,1],[12,22,1],[11,22,0],[12,25,0],[14,26,1],[17,28,1],[18,30,1],[20,32,1]],
+   corpo:`## Quando ir
+Não existe época ruim, mas o calor do verão cansa nas trilhas. Outono e primavera costumam ter o clima mais confortável para caminhar.
+
+## Volume das quedas
+Nos meses mais chuvosos as quedas ficam mais volumosas. Em cheias fortes, algumas passarelas podem fechar por segurança.
+
+## Lado brasileiro e lado argentino
+O lado brasileiro tem a vista panorâmica das quedas. O argentino chega mais perto da água e da Garganta do Diabo. O ideal é visitar os dois, em dias separados.
+
+## Outros passeios
+Parque das Aves, usina de Itaipu e Marco das Três Fronteiras completam o roteiro.
+
+## Dicas
+Chegue cedo para evitar filas, leve capa de chuva e calçado fechado e confortável.`,
+   faq:[{q:'Preciso de passaporte para o lado argentino?',a:'Brasileiros podem entrar na Argentina com RG em bom estado ou passaporte. Confirme as regras vigentes antes de viajar.'},
+        {q:'Quantos dias ficar em Foz do Iguaçu?',a:'Três a quatro dias permitem ver os dois lados das Cataratas e mais dois ou três passeios.'},
+        {q:'Qual lado das Cataratas é melhor?',a:'O brasileiro tem a vista panorâmica e o argentino chega perto das quedas. Vale visitar os dois.'}]},
+  {id:'lisboa-melhor-epoca',titulo:'Lisboa: melhor época, clima mês a mês e dicas',destino:'Lisboa',cena:'cidade',data:D(-2),publicado:true,
+   resumo:'Quando viajar para Lisboa, temperatura mês a mês, época de chuva, documentos e quantos dias reservar.',
+   respostaRapida:'A melhor época para visitar Lisboa é de abril a junho e de setembro a outubro: temperaturas amenas, dias longos e menos multidão que no verão. Julho e agosto são quentes, com máximas perto de 28 °C. O inverno é ameno e chove mais. Reserve de 5 a 8 dias.',
+   melhorEpoca:'Abril a junho e setembro a outubro',tempMedia:'8 °C a 29 °C',
+   clima:[[8,15,2],[9,16,2],[11,18,1],[12,20,1],[14,22,0],[16,25,0],[18,28,0],[18,29,0],[17,26,0],[15,22,1],[11,18,2],[9,15,2]],
+   corpo:`## Primavera e início do verão
+De abril a junho a cidade está florida, o clima é agradável e os dias são longos. Em junho acontecem os Santos Populares, com a festa de Santo António em 13 de junho.
+
+## Verão
+Julho e agosto são secos e quentes e a cidade fica cheia. Prefira passeios cedo e à noite.
+
+## Outono
+Setembro e outubro mantêm o calor ameno, com menos gente e boa luz.
+
+## Inverno
+De dezembro a fevereiro chove mais e os dias são curtos, mas os preços de hospedagem costumam ser menores, exceto no fim do ano.
+
+## Documentos
+É preciso passaporte válido. Brasileiros têm isenção de visto para turismo de até 90 dias. Confira se há exigência de autorização de viagem europeia na data da sua viagem.
+
+## Quantos dias ficar
+Cinco dias cobrem Lisboa. Com sete ou oito dá para incluir Sintra e Cascais com calma.`,
+   faq:[{q:'Brasileiro precisa de visto para Portugal?',a:'Para turismo de até 90 dias, não. Confira sempre as regras de entrada vigentes antes de viajar.'},
+        {q:'Quando Lisboa é mais barata?',a:'De novembro a março, exceto o fim de ano, as diárias e passagens costumam ser menores.'},
+        {q:'Quantos dias ficar em Lisboa?',a:'Cinco dias bastam para a cidade. Com sete ou oito você inclui Sintra e Cascais.'}]}
+  ];
+}
+function seedData(){return {viagens:seedViagens(),posts:seedPosts()}}
+/* ========== estado ========== */
+let DB=load(K.db,null);
+if(!DB||!DB.viagens||!DB.posts){DB=seedData();save(K.db,DB)}
+let CFG=Object.assign({whatsapp:'',email:'',instagram:'brazilagenciadeviagens',cidade:'',cadastur:'',cnpj:'',horario:'',heroImagem:''},load(K.cfg,{}));
+let PED=load(K.ped,[]);
+let ST=load(K.st,{wa:{},views:{},buscas:{}});
+const Q={destino:'',mes:'',saida:'',grupo:'',orc:'',tags:[],tipo:'',ord:'rel'};
+let PRE=null;
+let TS={adultos:2,criancas:0,idades:'',data:''};
+const NAME='Brazil Viagem';
+
+function track(kind,key){if(!key)return;ST[kind]=ST[kind]||{};ST[kind][key]=(ST[kind][key]||0)+1;save(K.st,ST)}
+const datasFut=v=>(v.datas||[]).filter(d=>d>=hoje()).sort();
+const vencida=v=>!!((v.validade&&v.validade<hoje())||((v.datas||[]).length&&!datasFut(v).length));
+const visivel=v=>v.publicado&&!vencida(v);
+const pubTrips=()=>DB.viagens.filter(visivel);
+const allTags=()=>{const s=new Set(BASE_TAGS);DB.viagens.forEach(v=>(v.tags||[]).forEach(t=>s.add(t)));return Array.from(s)};
+const saidas=()=>Array.from(new Set(DB.viagens.map(v=>v.saida).filter(Boolean))).sort();
+const destinos=()=>Array.from(new Set(DB.viagens.map(v=>v.destino).concat(DB.posts.map(p=>p.destino)).filter(Boolean))).sort();
+const postDe=v=>DB.posts.find(p=>p.publicado&&norm(p.destino)===norm(v.destino));
+const hasWA=()=>digits(CFG.whatsapp).length>=10;
+function waURL(msg){const n=digits(CFG.whatsapp);if(n.length>=10)return 'https://wa.me/'+n+'?text='+encodeURIComponent(msg);return 'https://wa.me/?text='+encodeURIComponent(msg)}
+const canal=()=>'WhatsApp';
+const tipoLabel=t=>t==='excursao'?'Excursão em grupo':'Pacote';
+const parcelaTxt=v=>Number(v.parcelas)>1?'ou '+v.parcelas+'x de '+brl(Math.ceil(v.preco/v.parcelas*100)/100):'';
+const vagasTxt=v=>{if(v.vagas===''||v.vagas==null)return '';const n=Number(v.vagas);if(n<=0)return 'Lista de espera';return n<=8?'Restam '+n+(n===1?' vaga':' vagas'):''};
+function mesesOpts(){const out=[['','Qualquer época']],d=new Date();d.setDate(1);for(let i=0;i<14;i++){const y=d.getFullYear(),m=d.getMonth();out.push([y+'-'+pad(m+1),MESL[m]+' de '+y]);d.setMonth(m+1)}return out}
+const GRUPOS=[['','Qualquer perfil'],['Para casal','Casal'],['Lua de mel','Lua de mel'],['Família toda','Família'],['Bom para crianças','Com crianças'],['Entre amigos','Amigos'],['Melhor idade','Melhor idade']];
+const ORCS=[['','Qualquer valor'],['2000','Até R$ 2.000'],['4000','Até R$ 4.000'],['6000','Até R$ 6.000'],['10000','Até R$ 10.000']];
+
+/* ========== SEO / GEO ========== */
+function setMeta(n,c){let m=document.querySelector('meta[name="'+n+'"]');if(!m){m=document.createElement('meta');m.name=n;document.head.appendChild(m)}m.content=c}
+function ld(obj){let s=document.getElementById('ld-json');if(!s){s=document.createElement('script');s.type='application/ld+json';s.id='ld-json';document.head.appendChild(s)}s.textContent=JSON.stringify(obj).replace(/</g,'\\u003c')}
+function orgLD(){const o={'@type':'TravelAgency','name':NAME,'sameAs':['https://www.instagram.com/'+(CFG.instagram||'brazilagenciadeviagens')+'/']};if(hasWA())o.telephone='+'+digits(CFG.whatsapp);if(CFG.email)o.email=CFG.email;return o}
+function seo(title,desc,extra){document.title=title;setMeta('description',desc);ld({'@context':'https://schema.org','@graph':[orgLD()].concat(extra||[])})}
+const faqLD=list=>({'@type':'FAQPage','mainEntity':list.map(f=>({'@type':'Question','name':f.q,'acceptedAnswer':{'@type':'Answer','text':f.a}}))});
+
+/* ========== markdown simples ========== */
+const inl=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
+function md(t){return String(t||'').split(/\n{2,}/).map(b=>{b=b.trim();if(!b)return '';
+  if(b.startsWith('## '))return '<h2>'+inl(b.slice(3))+'</h2>';
+  const ls=b.split('\n');
+  if(ls.every(l=>/^[-*] /.test(l)))return '<ul>'+ls.map(l=>'<li>'+inl(l.slice(2))+'</li>').join('')+'</ul>';
+  return '<p>'+inl(ls.join(' '))+'</p>'}).join('')}
+const readMin=p=>Math.max(2,Math.round(((p.corpo||'')+' '+(p.respostaRapida||'')).split(/\s+/).length/190));
+/* ========== chrome: cabeçalho, rodapé ========== */
+const NAV=[['viagens','Viagens'],['monte-sua-viagem','Monte sua viagem'],['blog','Guias de destino'],['sobre','Sobre']];
+function drawHead(h){
+  $('#nav').innerHTML=NAV.map(n=>'<a href="#'+n[0]+'"'+(h===n[0]||(n[0]==='blog'&&h.startsWith('guia-'))||(n[0]==='viagens'&&h.startsWith('viagem-'))?' aria-current="page"':'')+'>'+n[1]+'</a>').join('')+(isAdmin()?'<a href="#admin"'+(h==='admin'?' aria-current="page"':'')+'>Painel</a>':'');
+  const href=waURL('Olá! Vim pelo site da Brazil Viagem e gostaria de atendimento.');
+  ['head-cta','wa-float'].forEach(id=>{const a=document.getElementById(id);if(a)a.href=href});
+  $('#head-cta').textContent='Falar no WhatsApp';
+  $('#wa-float-t').textContent=canal();
+}
+function drawFoot(){
+  const ig=CFG.instagram||'brazilagenciadeviagens';
+  $('#foot').innerHTML='<div class="wrap foot-in"><div><a class="logo" href="#inicio" aria-label="Brazil, a sua agência de viagens"><svg class="lg-svg" aria-hidden="true"><use href="#bv-logo"/></svg><small class="lg-tag">A sua agência de viagens</small></a><p style="margin-top:12px;max-width:34ch">Pacotes prontos, excursões em grupo e roteiros sob medida para o Brasil e o exterior.</p>'
+   +(CFG.cadastur||CFG.cnpj?'<small>'+(CFG.cadastur?'Cadastur '+esc(CFG.cadastur):'')+(CFG.cadastur&&CFG.cnpj?' · ':'')+(CFG.cnpj?'CNPJ '+esc(CFG.cnpj):'')+'</small>':'')
+   +'<small>Valores e disponibilidade sujeitos a confirmação no momento da reserva.</small></div>'
+   +'<div><h4>Site</h4><ul><li><a href="#viagens">Viagens</a></li><li><a href="#monte-sua-viagem">Monte sua viagem</a></li><li><a href="#blog">Guias de destino</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#privacidade">Privacidade</a></li><li><a href="#cancelamento">Cancelamento e remarcação</a></li><li><button type="button" class="foot-intro">Rever abertura</button></li></ul></div>'
+   +'<div><h4>Contato</h4><ul><li><a href="https://www.instagram.com/'+esc(ig)+'/" target="_blank" rel="noopener">Instagram @'+esc(ig)+'</a></li>'
+   +(hasWA()?'<li>WhatsApp: <span class="copyable">'+esc(CFG.whatsapp)+'</span></li>':'')+(CFG.email?'<li>E-mail: <span class="copyable">'+esc(CFG.email)+'</span></li>':'')
+   +(CFG.horario?'<li>'+esc(CFG.horario)+'</li>':'')+(CFG.cidade?'<li>'+esc(CFG.cidade)+'</li>':'')+'<li><a href="#admin">Área da agência</a></li></ul></div></div>';
+}
+
+/* ========== componentes ========== */
+function cardViagem(v){
+  const f=datasFut(v),vg=vagasTxt(v);
+  return '<a class="tcard" href="#viagem-'+esc(v.id)+'"><div class="cover"><img loading="lazy" alt="" src="'+esc(capa(v))+'"><div class="badges">'
+   +(v.tipo==='excursao'?'<span class="badge">Excursão em grupo</span>':'')+(vg?'<span class="badge badge-warn">'+vg+'</span>':'')+'</div></div>'
+   +'<div class="tbody"><div class="tmeta">'+esc(v.destino)+' · '+v.dias+' dias e '+v.noites+' noites'+(v.saida?' · saída de '+esc(v.saida):'')+'</div>'
+   +'<h3>'+esc(v.titulo)+'</h3><div class="tags">'+(v.tags||[]).slice(0,3).map(t=>'<span class="tag">'+esc(t)+'</span>').join('')+'</div>'
+   +'<div class="price"><small>a partir de, '+esc(v.precoRef||'por pessoa')+'</small><b>'+brl(v.preco)+'</b>'+(Number(v.precoOriginal)>Number(v.preco)?'<s>'+brl(v.precoOriginal)+'</s>':'')
+   +(parcelaTxt(v)?'<small>'+parcelaTxt(v)+'</small>':'')+'</div>'
+   +'<div class="nxt">'+(f[0]?'Próxima saída: '+fmtData(f[0]):'Datas sob consulta')+'</div></div></a>';
+}
+function cardPost(p){
+  return '<a class="pcard" href="#guia-'+esc(p.id)+'"><div class="cover"><img loading="lazy" alt="" src="'+esc(capa(p))+'"></div><div class="pbody"><span class="eyebrow">'+esc(p.destino)+'</span><h3>'+esc(p.titulo)+'</h3><p>'+esc(p.resumo)+'</p>'
+   +(p.melhorEpoca?'<div class="facts">Melhor época: '+esc(p.melhorEpoca)+'</div>':'')+'</div></a>';
+}
+const faqBlock=l=>'<div class="faq">'+l.map(f=>'<details><summary>'+esc(f.q)+'</summary><p>'+esc(f.a)+'</p></details>').join('')+'</div>';
+function notFound(){seo('Página não encontrada | '+NAME,'Página não encontrada.');return '<div class="wrap sec narrow"><h1>Página não encontrada</h1><p class="muted" style="margin:10px 0 18px">O endereço pode ter mudado ou a viagem saiu do ar.</p><a class="btn btn-p" href="#viagens">Ver viagens</a></div>'}
+
+/* ========== início ========== */
+const FAQ_HOME=[
+ {q:'Como funciona a reserva?',a:'Você escolhe o pacote e a data, fala com a agência pelo canal de atendimento e confirma os detalhes. A reserva só é feita depois que você aprova a proposta e combina a forma de pagamento.'},
+ {q:'Quais formas de pagamento a agência aceita?',a:'As condições de pagamento e parcelamento aparecem em cada viagem. Fale com a agência para ver as opções disponíveis para a sua data.'},
+ {q:'Posso viajar com crianças?',a:'Sim. Use o filtro Bom para crianças para ver os pacotes mais indicados e informe as idades ao pedir a cotação, porque valores e regras mudam conforme a idade.'},
+ {q:'O preço do site já inclui tudo?',a:'Cada viagem mostra o que está incluído e o que não está. O valor é por pessoa, na condição indicada, como quarto duplo, e pode mudar até a confirmação da reserva.'},
+ {q:'A agência faz viagens que não estão no site?',a:'Sim. Use a página Monte sua viagem para pedir um roteiro sob medida para qualquer destino.'},
+ {q:'Preciso de passaporte?',a:'Para viagens dentro do Brasil, basta documento oficial com foto. Para o exterior depende do país: cada pacote internacional traz a lista de documentos e a agência orienta antes da reserva.'}
+];
+function viewHome(){
+  const all=pubTrips(),dest=all.filter(v=>v.destaque),lista=(dest.length?dest:all).slice(0,6);
+  const deps=[];all.forEach(v=>datasFut(v).forEach(d=>deps.push({d:d,v:v})));deps.sort((a,b)=>a.d.localeCompare(b.d));
+  const freq={};all.forEach(v=>(v.tags||[]).forEach(t=>freq[t]=(freq[t]||0)+1));
+  const topTags=Object.keys(freq).sort((a,b)=>freq[b]-freq[a]).slice(0,6);
+  const posts=DB.posts.filter(p=>p.publicado).sort((a,b)=>b.data.localeCompare(a.data)).slice(0,3);
+  seo(NAME+' | Pacotes de viagem e roteiros sob medida','Pesquise pacotes de viagem por destino, época e perfil. Excursões, pacotes nacionais e internacionais e roteiros sob medida com atendimento direto.',[faqLD(FAQ_HOME)]);
+  const hero=CFG.heroImagem&&/^data:image\//.test(CFG.heroImagem)?CFG.heroImagem:'/brazil/assets/noronha.jpg';
+  return '<section class="hero"><img class="hero-art" alt="" src="'+esc(hero)+'"><div class="wrap hero-in"><h1>Para onde você quer <i>ir?</i></h1>'
+   +'<p class="hero-sub">Pesquise pacotes prontos por destino, época e perfil de viagem. Não achou o que queria? A agência monta o roteiro sob medida.</p>'
+   +'<form class="search" id="hero-search"><label class="fld"><span>Destino</span><input class="in" id="h-destino" list="dl-destinos" autocomplete="off" placeholder="Cidade, praia, país"></label>'
+   +'<label class="fld"><span>Quando</span><select class="in" id="h-mes">'+opts(mesesOpts(),'')+'</select></label>'
+   +'<label class="fld"><span>Saindo de</span><select class="in" id="h-saida">'+opts([['','Qualquer cidade']].concat(saidas().map(s=>[s,s])),'')+'</select></label>'
+   +'<label class="fld"><span>Quem vai</span><select class="in" id="h-grupo">'+opts(GRUPOS,'')+'</select></label>'
+   +'<button class="btn btn-a" type="submit">Buscar viagens</button></form>'
+   +'<datalist id="dl-destinos">'+destinos().map(d=>'<option value="'+esc(d)+'">').join('')+'</datalist>'
+   +'<div class="hero-chips"><span>Comece por aqui:</span>'+topTags.map(t=>'<button type="button" class="chip" data-act="quicktag" data-tag="'+esc(t)+'">'+esc(t)+'</button>').join('')+'</div></div></section>'
+   +'<section class="sec wrap"><div class="sec-h"><div><h2>Saídas em destaque</h2><p>Pacotes e excursões com datas abertas.</p></div><a class="btn btn-g btn-sm" href="#viagens">Ver todas as viagens</a></div><div class="grid">'+lista.map(cardViagem).join('')+'</div></section>'
+   +(deps.length?'<section class="wrap" style="padding-bottom:44px"><div class="sec-h"><div><h2>Próximas saídas</h2><p>Datas abertas nos próximos meses, em ordem.</p></div></div><div class="deps">'
+     +deps.slice(0,6).map(x=>{const dt=parseD(x.d),vg=vagasTxt(x.v);return '<a class="dep" href="#viagem-'+esc(x.v.id)+'"><div class="dep-date"><b>'+dt.getDate()+'</b><span>'+MES[dt.getMonth()]+'</span></div><div><h3>'+esc(x.v.titulo)+'</h3><p>'+esc(x.v.destino)+' · '+x.v.dias+' dias · saída de '+esc(x.v.saida||'consulte')+'</p></div><div class="dep-side">'+(vg?'<span class="pill pill-warn">'+vg+'</span>':'')+'<b>'+brl(x.v.preco)+'</b></div></a>'}).join('')+'</div></section>':'')
+   +'<section class="band"><div class="wrap band-in"><div><h2>Não achou o destino ou a data?</h2><p>Conte o que você imagina. A agência monta o roteiro, cota passagens e hospedagem e volta com a proposta pelo '+canal()+'.</p><div class="row" style="margin-top:18px"><a class="btn btn-a" href="#monte-sua-viagem">Montar minha viagem</a></div></div>'
+   +'<ul><li>Aéreo, hotel, passeios e seguro em uma só proposta</li><li>Para casal, família ou grupo de amigos</li><li>Datas fixas ou flexíveis</li></ul></div></section>'
+   +(posts.length?'<section class="sec wrap"><div class="sec-h"><div><h2>Guias de destino</h2><p>Melhor época, clima e quantos dias ficar, antes de escolher a viagem.</p></div><a class="btn btn-g btn-sm" href="#blog">Ver todos os guias</a></div><div class="grid">'+posts.map(cardPost).join('')+'</div></section>':'')
+   +'<section class="wrap" style="padding-bottom:30px"><div class="sec-h"><h2>Perguntas frequentes</h2></div><div style="max-width:780px">'+faqBlock(FAQ_HOME)+'</div></section>';
+}
+
+/* ========== lista de viagens ========== */
+function filtrar(){
+  let l=pubTrips();const q=Q;
+  if(q.destino){const t=norm(q.destino);l=l.filter(v=>norm([v.destino,v.titulo,v.pais,(v.tags||[]).join(' ')].join(' ')).includes(t))}
+  if(q.mes)l=l.filter(v=>!(v.datas||[]).length||datasFut(v).some(d=>d.startsWith(q.mes)));
+  if(q.saida)l=l.filter(v=>v.saida===q.saida);
+  if(q.grupo)l=l.filter(v=>(v.tags||[]).includes(q.grupo));
+  if(q.orc)l=l.filter(v=>Number(v.preco)<=Number(q.orc));
+  if(q.tipo)l=l.filter(v=>v.tipo===q.tipo);
+  if(q.tags.length)l=l.filter(v=>q.tags.every(t=>(v.tags||[]).includes(t)));
+  if(q.ord==='preco')l.sort((a,b)=>a.preco-b.preco);
+  else if(q.ord==='data')l.sort((a,b)=>(datasFut(a)[0]||'9999').localeCompare(datasFut(b)[0]||'9999'));
+  else l.sort((a,b)=>(b.destaque?1:0)-(a.destaque?1:0));
+  return l;
+}
+function drawResults(){
+  const el=$('#results');if(!el)return;const l=filtrar();
+  el.innerHTML='<p class="count" aria-live="polite">'+l.length+(l.length===1?' viagem encontrada':' viagens encontradas')+'</p>'
+   +(l.length?'<div class="grid">'+l.map(cardViagem).join('')+'</div>'
+    :'<div class="empty"><h3>Nenhuma viagem com esses filtros</h3><p>Não achou o que procurava? A agência monta uma viagem sob medida'+(Q.destino?' para '+esc(Q.destino):'')+', com as datas e o orçamento que você tem.</p><div class="row"><a class="btn btn-a" data-act="pre-monte" href="#monte-sua-viagem">Montar minha viagem</a><button class="btn btn-g" type="button" data-act="limpar">Limpar filtros</button></div></div>');
+}
+function viewViagens(){
+  seo('Viagens e pacotes | '+NAME,'Pacotes e excursões com saídas abertas. Filtre por destino, época, cidade de saída, orçamento e perfil de viagem.');
+  const tg=allTags().filter(t=>pubTrips().some(v=>(v.tags||[]).includes(t)));
+  return '<div class="page-head"><div class="wrap"><h1>Viagens</h1><p>Filtre por destino, época e perfil. Os preços são por pessoa e mudam conforme a data.</p></div></div>'
+   +'<div class="wrap list-layout"><aside class="filters"><details class="fbox" id="fbox"><summary>Filtros</summary><div class="fgrid">'
+   +'<label class="fld"><span>Destino</span><input class="in" data-f="destino" list="dl-destinos" value="'+esc(Q.destino)+'" autocomplete="off"></label>'
+   +'<datalist id="dl-destinos">'+destinos().map(d=>'<option value="'+esc(d)+'">').join('')+'</datalist>'
+   +'<label class="fld"><span>Quando</span><select class="in" data-f="mes">'+opts(mesesOpts(),Q.mes)+'</select></label>'
+   +'<label class="fld"><span>Saindo de</span><select class="in" data-f="saida">'+opts([['','Qualquer cidade']].concat(saidas().map(s=>[s,s])),Q.saida)+'</select></label>'
+   +'<label class="fld"><span>Quem vai</span><select class="in" data-f="grupo">'+opts(GRUPOS,Q.grupo)+'</select></label>'
+   +'<label class="fld"><span>Orçamento por pessoa</span><select class="in" data-f="orc">'+opts(ORCS,Q.orc)+'</select></label>'
+   +'<div class="fld"><span>Tipo</span><div class="pills">'+[['','Todos'],['pacote','Pacotes'],['excursao','Excursões']].map(t=>'<button type="button" class="chip" data-act="ftipo" data-v="'+t[0]+'" aria-pressed="'+(Q.tipo===t[0])+'">'+t[1]+'</button>').join('')+'</div></div>'
+   +'<div class="fld"><span>Perfil e estilo</span><div class="pills" id="ftags">'+tg.map(t=>'<button type="button" class="chip" data-act="ftag" data-tag="'+esc(t)+'" aria-pressed="'+Q.tags.includes(t)+'">'+esc(t)+'</button>').join('')+'</div></div>'
+   +'<label class="fld"><span>Ordenar</span><select class="in" data-f="ord">'+opts([['rel','Em destaque'],['preco','Menor preço'],['data','Saída mais próxima']],Q.ord)+'</select></label>'
+   +'<button type="button" class="btn btn-g btn-sm" data-act="limpar">Limpar filtros</button></div></details></aside><div id="results"></div></div>';
+}
+/* ========== página da viagem ========== */
+function waTripMsg(v){
+  const d=TS.data?'saída em '+fmtLonga(TS.data):'datas a combinar';
+  return 'Olá! Tenho interesse no pacote "'+v.titulo+'" ('+v.destino+'). '+d+'. '+TS.adultos+' adulto'+(TS.adultos>1?'s':'')
+   +(TS.criancas?' e '+TS.criancas+' criança'+(TS.criancas>1?'s':'')+(TS.idades?' (idades: '+TS.idades+')':''):'')+'. Pode me passar mais informações?';
+}
+function updateTrip(v){
+  if(!v)return;const href=waURL(waTripMsg(v));
+  $$('.wa-trip').forEach(a=>a.href=href);
+  const t=$('#o-total');if(t)t.textContent=brl(Number(v.preco)*TS.adultos);
+  const oa=$('#o-adultos'),oc=$('#o-criancas');if(oa)oa.textContent=TS.adultos;if(oc)oc.textContent=TS.criancas;
+  const idw=$('#w-idades');if(idw)idw.hidden=!TS.criancas;
+}
+function unavailable(v){
+  seo(v.titulo+' | '+NAME,'Esta viagem não tem saídas abertas no momento.');
+  return '<div class="wrap sec narrow"><span class="eyebrow">'+esc(v.destino)+'</span><h1 style="margin:8px 0 12px">'+esc(v.titulo)+'</h1><div class="note">Esta viagem não tem saídas abertas no momento.</div><p class="muted" style="margin:14px 0 18px">A agência pode montar uma viagem parecida, ou avisar quando abrir novas datas.</p><div class="row"><a class="btn btn-a" data-act="pre-monte" data-dest="'+esc(v.destino)+'" href="#monte-sua-viagem">Montar minha viagem</a><a class="btn btn-g" href="#viagens">Ver outras viagens</a></div></div>';
+}
+function viewViagem(id){
+  const v=DB.viagens.find(x=>x.id===id);if(!v)return notFound();
+  const adm=isAdmin();if(!visivel(v)&&!adm)return unavailable(v);
+  if(!adm)track('views',v.id);
+  const f=datasFut(v);TS={adultos:2,criancas:0,idades:'',data:f[0]||''};
+  const post=postDe(v),vg=vagasTxt(v);
+  const rel=pubTrips().filter(x=>x.id!==v.id).map(x=>({x:x,s:((x.tags||[]).filter(t=>(v.tags||[]).includes(t)).length+(norm(x.destino)===norm(v.destino)?5:0))})).filter(o=>o.s>0).sort((a,b)=>b.s-a.s).slice(0,3).map(o=>o.x);
+  seo(v.titulo+' | '+NAME,v.titulo+': '+v.dias+' dias e '+v.noites+' noites em '+v.destino+(v.saida?', saindo de '+v.saida:'')+'. A partir de '+brl(v.preco)+' por pessoa.',[{
+    '@type':'TouristTrip','name':v.titulo,'description':(v.descricao||'').split('\n')[0],'touristType':v.tags||[],
+    'itinerary':{'@type':'ItemList','itemListElement':(v.roteiro||[]).map((r,i)=>({'@type':'ListItem','position':i+1,'name':r.titulo,'description':r.texto}))},
+    'offers':{'@type':'Offer','price':Number(v.preco),'priceCurrency':'BRL','availability':'https://schema.org/InStock'}}]);
+  const stateNote=!v.publicado?'<div class="note" style="margin-bottom:14px">Rascunho: só você vê esta página.</div>':(vencida(v)?'<div class="note" style="margin-bottom:14px">Viagem vencida: só você vê esta página.</div>':'');
+  const dsel=f.length?'<label class="fld"><span>Saída</span><select class="in" id="t-data">'+f.map(d=>'<option value="'+d+'">'+fmtLonga(d)+'</option>').join('')+'</select></label>':'<div class="sm">Datas flexíveis. Combine com a agência.</div>';
+  const buy='<div class="buy-box"><div><div class="sm">a partir de, '+esc(v.precoRef||'por pessoa')+'</div><div class="big">'+brl(v.preco)+(Number(v.precoOriginal)>Number(v.preco)?' <s class="sm">'+brl(v.precoOriginal)+'</s>':'')+'</div>'+(parcelaTxt(v)?'<div class="sm">'+parcelaTxt(v)+'</div>':'')+(v.validade?'<div class="sm">Valor válido até '+fmtData(v.validade)+'</div>':'')+'</div>'
+   +(vg?'<div class="note">'+vg+'</div>':'')+dsel
+   +'<div class="pp"><div class="fld"><span>Adultos</span><div class="stepper"><button type="button" data-act="step" data-k="adultos" data-d="-1" aria-label="Menos um adulto">−</button><output id="o-adultos">2</output><button type="button" data-act="step" data-k="adultos" data-d="1" aria-label="Mais um adulto">+</button></div></div>'
+   +'<div class="fld"><span>Crianças</span><div class="stepper"><button type="button" data-act="step" data-k="criancas" data-d="-1" aria-label="Menos uma criança">−</button><output id="o-criancas">0</output><button type="button" data-act="step" data-k="criancas" data-d="1" aria-label="Mais uma criança">+</button></div></div></div>'
+   +'<label class="fld" id="w-idades" hidden><span>Idades das crianças</span><input class="in" id="t-idades" placeholder="Ex.: 4 e 9 anos"></label>'
+   +'<div><div class="sm">Estimativa para os adultos</div><div class="big" id="o-total" style="font-size:1.3rem">'+brl(v.preco*2)+'</div><div class="sm">Crianças e quarto individual: consulte.</div></div>'
+   +'<a class="btn btn-wa btn-block wa-trip" data-act="wa" data-id="'+esc(v.id)+'" target="_blank" rel="noopener" href="#">'+(vg==='Lista de espera'?'Entrar na lista de espera':'Reservar pelo '+canal())+'</a>'
+   +'<a class="btn btn-g btn-block" data-act="pre-monte" data-dest="'+esc(v.destino)+'" href="#monte-sua-viagem">Quero algo parecido, sob medida</a></div>';
+  return '<div class="wrap"><nav class="crumbs" aria-label="Você está em"><a href="#viagens">Viagens</a> › '+esc(v.destino)+'</nav>'+stateNote+'<div class="trip"><div>'
+   +'<h1>'+esc(v.titulo)+'</h1><div class="tags">'+(v.tags||[]).map(t=>'<span class="tag">'+esc(t)+'</span>').join('')+'</div>'
+   +'<div class="hcover"><img alt="" src="'+esc(capa(v))+'"></div>'
+   +'<div class="qf"><div><small>Duração</small><b>'+v.dias+' dias, '+v.noites+' noites</b></div><div><small>Saída de</small><b>'+esc(v.saida||'Consulte')+'</b></div><div><small>Transporte</small><b>'+esc(v.transporte||'Consulte')+'</b></div><div><small>Tipo</small><b>'+tipoLabel(v.tipo)+'</b></div></div>'
+   +'<div class="blk"><h2>Sobre a viagem</h2>'+String(v.descricao||'').split(/\n+/).filter(Boolean).map(p=>'<p>'+esc(p)+'</p>').join('')+'</div>'
+   +((v.roteiro||[]).length?'<div class="blk"><h2>Roteiro dia a dia</h2><div class="acc">'+v.roteiro.map((r,i)=>'<details'+(i===0?' open':'')+'><summary><span><span class="when">'+esc(r.quando||'Dia '+(i+1))+'</span>'+esc(r.titulo)+'</span></summary><p>'+esc(r.texto)+'</p></details>').join('')+'</div></div>':'')
+   +'<div class="blk two"><div><h2>O que está incluído</h2><ul class="lst ok">'+(v.inclui||[]).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></div><div><h2>Não está incluído</h2><ul class="lst no">'+(v.naoInclui||[]).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></div></div>'
+   +(v.documentos?'<div class="blk"><h2>Documentos necessários</h2><p>'+esc(v.documentos)+'</p></div>':'')
+   +(v.condicoes?'<div class="blk"><h2>Pagamento e cancelamento</h2><p>'+esc(v.condicoes)+'</p><p><a href="#cancelamento">Ler a política de cancelamento e remarcação</a></p></div>':'')
+   +(post?'<div class="blk"><h2>Guia do destino</h2><a class="gcard" href="#guia-'+esc(post.id)+'"><div><b>'+esc(post.titulo)+'</b><span>Melhor época: '+esc(post.melhorEpoca)+' · Temperatura: '+esc(post.tempMedia)+'</span></div></a></div>':'')
+   +'</div><aside class="buy">'+buy+'</aside></div>'
+   +(rel.length?'<section class="sec"><div class="sec-h"><h2>Viagens parecidas</h2></div><div class="grid">'+rel.map(cardViagem).join('')+'</div></section>':'')+'</div>'
+   +'<div class="buybar"><div><small>a partir de</small><b>'+brl(v.preco)+'</b></div><a class="btn btn-wa wa-trip" data-act="wa" data-id="'+esc(v.id)+'" target="_blank" rel="noopener" href="#">Reservar</a></div>';
+}
+
+/* ========== blog ========== */
+function viewBlog(){
+  seo('Guias de destino: melhor época, clima e dicas | '+NAME,'Guias com melhor época para viajar, temperatura média, época de chuva e quantos dias ficar nos principais destinos do Brasil e do exterior.');
+  return '<div class="page-head"><div class="wrap"><h1>Guias de destino</h1><p>Melhor época, clima, quantos dias ficar e o que levar. Informação direta para planejar antes de escolher a viagem.</p></div></div>'
+   +'<div class="wrap sec"><label class="fld" style="max-width:380px;margin-bottom:20px"><span>Buscar destino</span><input class="in" id="b-q" autocomplete="off"></label><div class="grid" id="b-list">'
+   +DB.posts.filter(p=>p.publicado).sort((a,b)=>b.data.localeCompare(a.data)).map(cardPost).join('')+'</div></div>';
+}
+function drawBlogList(){
+  const t=norm($('#b-q').value),l=DB.posts.filter(p=>p.publicado&&(!t||norm(p.titulo+' '+p.destino).includes(t))).sort((a,b)=>b.data.localeCompare(a.data));
+  $('#b-list').innerHTML=l.length?l.map(cardPost).join(''):'<p class="muted">Nenhum guia encontrado. Peça uma viagem sob medida para esse destino.</p>';
+}
+function viewGuia(id){
+  const p=DB.posts.find(x=>x.id===id);if(!p||(!p.publicado&&!isAdmin()))return notFound();
+  const rel=pubTrips().filter(v=>norm(v.destino)===norm(p.destino)).slice(0,3);
+  const outros=DB.posts.filter(x=>x.publicado&&x.id!==p.id).slice(0,3);
+  const hasC=p.clima&&p.clima.some(r=>r&&r[0]!==''&&r[1]!=='');
+  seo(p.titulo+' | '+NAME,p.resumo,[{'@type':'Article','headline':p.titulo,'description':p.resumo,'dateModified':p.data,'about':{'@type':'Place','name':p.destino},'publisher':{'@type':'TravelAgency','name':NAME}}].concat((p.faq||[]).length?[faqLD(p.faq)]:[]));
+  return '<div class="wrap narrow" style="max-width:860px"><nav class="crumbs"><a href="#blog">Guias de destino</a> › '+esc(p.destino)+'</nav>'
+   +(!p.publicado?'<div class="note" style="margin-bottom:14px">Rascunho: só você vê esta página.</div>':'')
+   +'<span class="eyebrow">'+esc(p.destino)+'</span><h1 style="margin:8px 0 10px;font-size:clamp(1.5rem,4.6vw,2.4rem)">'+esc(p.titulo)+'</h1>'
+   +'<p class="muted" style="font-size:.9rem">Atualizado em '+fmtLonga(p.data)+' · '+readMin(p)+' min de leitura</p>'
+   +'<div class="hcover"><img alt="" src="'+esc(capa(p))+'"></div>'
+   +'<div class="answer"><h2>Resposta rápida</h2><p>'+esc(p.respostaRapida)+'</p><dl><div><dt>Melhor época</dt><dd>'+esc(p.melhorEpoca)+'</dd></div><div><dt>Temperatura média</dt><dd>'+esc(p.tempMedia)+'</dd></div><div><dt>Destino</dt><dd>'+esc(p.destino)+'</dd></div></dl></div>'
+   +(hasC?'<div class="blk"><h2>Clima mês a mês</h2><div class="tblwrap"><table class="t"><thead><tr><th>Mês</th><th>Mín. e máx.</th><th>Chuva</th></tr></thead><tbody>'
+     +p.clima.map((r,i)=>r&&r[0]!==''?'<tr><th scope="row">'+MESL[i].charAt(0).toUpperCase()+MESL[i].slice(1)+'</th><td>'+r[0]+'° a '+r[1]+'°</td><td><span class="rain rain-'+(Number(r[2])||0)+'">'+['Baixa','Média','Alta'][Number(r[2])||0]+'</span></td></tr>':'').join('')
+     +'</tbody></table></div><p class="muted" style="font-size:.82rem;margin-top:8px">Médias aproximadas em °C. Podem variar de um ano para outro.</p></div>':'')
+   +'<div class="prose">'+md(p.corpo)+'</div>'
+   +((p.faq||[]).length?'<div class="blk"><h2>Perguntas frequentes</h2>'+faqBlock(p.faq)+'</div>':'')
+   +'<div class="blk"><h2>'+(rel.length?'Viagens para '+esc(p.destino):'Quer ir para '+esc(p.destino)+'?')+'</h2>'
+   +(rel.length?'<div class="grid">'+rel.map(cardViagem).join('')+'</div>':'<p class="muted" style="margin-bottom:12px">A agência monta um roteiro sob medida para o seu período e orçamento.</p><a class="btn btn-a" data-act="pre-monte" data-dest="'+esc(p.destino)+'" href="#monte-sua-viagem">Montar minha viagem</a>')+'</div>'
+   +(outros.length?'<div class="blk" style="margin-bottom:40px"><h2>Outros guias</h2><div class="grid">'+outros.map(cardPost).join('')+'</div></div>':'')+'</div>';
+}
+
+/* ========== monte sua viagem ========== */
+function viewMonte(){
+  seo('Monte sua viagem sob medida | '+NAME,'Conte para onde quer ir, quando e com quem. A agência monta um roteiro sob medida e envia a proposta.');
+  const pre=PRE||{};PRE=null;const tg=allTags().filter(t=>['Para casal','Lua de mel','Família toda','Bom para crianças','Entre amigos','Melhor idade','Praia','Natureza','Aventura','Cultura e história','Gastronomia','Relax'].includes(t));
+  return '<div class="page-head"><div class="wrap"><h1>Monte sua viagem</h1><p>Preencha o básico. A agência responde pelo '+canal()+' com uma proposta de roteiro, passagens e hospedagem.</p></div></div>'
+   +'<div class="wrap narrow sec" id="monte-wrap"><form class="form-card" id="monte" novalidate>'
+   +'<div class="g2"><label class="fld"><span>Seu nome</span><input class="in" id="m-nome" autocomplete="name"><span class="err" id="e-nome" hidden>Informe seu nome.</span></label>'
+   +'<label class="fld"><span>WhatsApp com DDD</span><input class="in" id="m-whats" type="tel" inputmode="tel" autocomplete="tel"><span class="err" id="e-whats" hidden>Informe um número com DDD.</span></label></div>'
+   +'<label class="fld"><span>E-mail (opcional)</span><input class="in" id="m-email" type="email" autocomplete="email"></label>'
+   +'<div class="g2"><label class="fld"><span>Destino</span><input class="in" id="m-destino" list="dl-destinos" value="'+esc(pre.destino||'')+'" autocomplete="off"><span class="err" id="e-destino" hidden>Informe o destino ou uma ideia.</span></label>'
+   +'<label class="fld"><span>Saindo de</span><input class="in" id="m-saida" list="dl-saidas" autocomplete="off"></label></div>'
+   +'<datalist id="dl-destinos">'+destinos().map(d=>'<option value="'+esc(d)+'">').join('')+'</datalist><datalist id="dl-saidas">'+saidas().map(d=>'<option value="'+esc(d)+'">').join('')+'</datalist>'
+   +'<div class="g2"><label class="fld"><span>Ida</span><input class="in" id="m-ida" type="date" min="'+hoje()+'"></label><label class="fld"><span>Volta</span><input class="in" id="m-volta" type="date" min="'+hoje()+'"></label></div>'
+   +'<div class="g2"><label class="fld"><span>Ou mês aproximado</span><select class="in" id="m-mes">'+opts(mesesOpts(),pre.mes||'')+'</select></label><label class="chk" style="align-self:end;padding-bottom:12px"><input type="checkbox" id="m-flex">Minhas datas são flexíveis</label></div>'
+   +'<div class="g2"><label class="fld"><span>Adultos</span><input class="in" id="m-adultos" type="number" min="1" max="20" value="2"></label><label class="fld"><span>Crianças</span><input class="in" id="m-criancas" type="number" min="0" max="20" value="0"></label></div>'
+   +'<label class="fld"><span>Idades das crianças</span><input class="in" id="m-idades"></label>'
+   +'<label class="fld"><span>Orçamento por pessoa</span><select class="in" id="m-orc">'+opts([['','Ainda não sei'],['Até R$ 2.000','Até R$ 2.000'],['R$ 2.000 a R$ 4.000','R$ 2.000 a R$ 4.000'],['R$ 4.000 a R$ 8.000','R$ 4.000 a R$ 8.000'],['Acima de R$ 8.000','Acima de R$ 8.000']],'')+'</select></label>'
+   +'<div class="fld"><span>O que você procura</span><div class="pills" id="m-tags">'+tg.map(t=>'<button type="button" class="chip" data-act="mtag" aria-pressed="false" data-tag="'+esc(t)+'">'+esc(t)+'</button>').join('')+'</div></div>'
+   +'<label class="fld"><span>Observações</span><textarea class="in" id="m-obs" rows="3"></textarea></label>'
+   +'<label class="chk"><input type="checkbox" id="m-lgpd"><span>Concordo em ser contatado(a) pela agência sobre este pedido. Meus dados serão usados só para isso, conforme a <a href="#privacidade">política de privacidade</a>.</span></label><span class="err" id="e-lgpd" hidden>Marque para continuar.</span>'
+   +'<button class="btn btn-a btn-block" type="submit">Enviar pedido</button></form></div>';
+}
+function submitMonte(){
+  const g=id=>$('#'+id),val=id=>g(id).value.trim();let ok=true;
+  const chk=(id,cond)=>{g(id).hidden=cond;if(!cond)ok=false};
+  chk('e-nome',!!val('m-nome'));chk('e-whats',digits(val('m-whats')).length>=10);chk('e-destino',!!val('m-destino'));chk('e-lgpd',g('m-lgpd').checked);
+  if(!ok){toast('Confira os campos destacados.');return}
+  const p={id:'p'+Date.now().toString(36),criado:new Date().toISOString(),status:'novo',origem:'sob-medida',nome:val('m-nome'),whats:val('m-whats'),email:val('m-email'),destino:val('m-destino'),saida:val('m-saida'),
+   ida:g('m-ida').value,volta:g('m-volta').value,mes:g('m-mes').value,flex:g('m-flex').checked,adultos:Number(g('m-adultos').value)||1,criancas:Number(g('m-criancas').value)||0,idades:val('m-idades'),
+   orc:g('m-orc').value,perfil:$$('#m-tags [aria-pressed="true"]').map(b=>b.dataset.tag),obs:val('m-obs')};
+  PED.unshift(p);save(K.ped,PED);track('buscas',p.destino);
+  const q=(p.ida?' Ida '+fmtLonga(p.ida)+(p.volta?', volta '+fmtLonga(p.volta):'')+'.':(p.mes?' Mês aproximado: '+p.mes+'.':''));
+  const msg='Olá! Acabei de pedir uma viagem sob medida pelo site. Sou '+p.nome+'. Destino: '+p.destino+'.'+q+(p.flex?' Datas flexíveis.':'')+' '+p.adultos+' adulto(s)'+(p.criancas?' e '+p.criancas+' criança(s)'+(p.idades?' ('+p.idades+')':''):'')+'.'+(p.orc?' Orçamento: '+p.orc+'.':'')+(p.obs?' '+p.obs:'');
+  $('#monte-wrap').innerHTML='<div class="form-card"><div class="note note-g">Pedido recebido, '+esc(p.nome.split(' ')[0])+'.</div><h2 style="font-size:1.2rem">Agora é só continuar pelo '+canal()+'</h2><p class="muted">A agência já tem os seus dados. Se preferir agilizar, envie a mensagem abaixo já preenchida.</p><a class="btn btn-wa" data-act="wa" data-id="geral" target="_blank" rel="noopener" href="'+esc(waURL(msg))+'">Continuar no '+canal()+'</a><a class="btn btn-g" href="#viagens">Ver viagens enquanto isso</a></div>';
+  window.scrollTo(0,0);
+}
+
+/* ========== páginas institucionais ========== */
+function viewSobre(){
+  seo('Sobre a '+NAME,'A Brazil Viagem é uma agência de viagens com pacotes prontos, excursões em grupo e roteiros sob medida, com atendimento direto.');
+  const steps=[['Escolha ou conte o que quer','Navegue pelos pacotes ou peça um roteiro sob medida.'],['Receba a proposta','A agência confere datas, valores e o que está incluído.'],['Reserve','Você aprova a proposta e combina a forma de pagamento.'],['Viaje com suporte','Documentos, voos e dúvidas ficam com a agência até a volta.']];
+  return '<div class="page-head"><div class="wrap"><h1>Sobre a Brazil Viagem</h1></div></div><div class="wrap narrow sec"><div class="prose"><p>A Brazil Viagem é uma agência de viagens que trabalha com pacotes prontos, excursões em grupo e roteiros sob medida, para destinos no Brasil e no exterior.</p><p>O atendimento é direto, pelo WhatsApp e pelo Instagram: você conversa com quem monta a sua viagem.</p></div>'
+   +'<div class="blk"><h2>Como funciona</h2><ol class="ul" style="gap:12px">'+steps.map(s=>'<li><b>'+s[0]+'.</b> '+s[1]+'</li>').join('')+'</ol></div>'
+   +'<div class="blk"><h2>Fale com a agência</h2><div class="row"><a class="btn btn-wa" data-act="wa" data-id="geral" target="_blank" rel="noopener" href="'+esc(waURL('Olá! Vim pelo site da Brazil Viagem.'))+'">Chamar no '+canal()+'</a><a class="btn btn-g" href="#monte-sua-viagem">Montar minha viagem</a></div>'
+   +(hasWA()?'<p class="muted" style="margin-top:10px">WhatsApp: <span class="copyable">'+esc(CFG.whatsapp)+'</span></p>':'')+(CFG.email?'<p class="muted">E-mail: <span class="copyable">'+esc(CFG.email)+'</span></p>':'')+'</div></div>';
+}
+function viewPrivacidade(){
+  seo('Política de privacidade | '+NAME,'Como a Brazil Viagem usa os dados informados nos formulários, conforme a LGPD.');
+  return '<div class="page-head"><div class="wrap"><h1>Política de privacidade</h1></div></div><div class="wrap narrow sec"><div class="prose"><h2>Quais dados coletamos</h2><p>Nome, telefone, e-mail e as preferências de viagem que você informa nos formulários do site.</p><h2>Para que usamos</h2><p>Para responder ao seu pedido, montar propostas e atender você durante a reserva. Não usamos seus dados para outras finalidades sem o seu consentimento.</p><h2>Compartilhamento</h2><p>Compartilhamos apenas o necessário com fornecedores da viagem, como companhias aéreas e hotéis, para concluir a reserva.</p><h2>Seus direitos</h2><p>Conforme a Lei Geral de Proteção de Dados (LGPD), você pode pedir confirmação do uso dos seus dados, acesso, correção, eliminação e a revogação do consentimento, a qualquer momento, pelo canal de atendimento da agência.</p></div></div>';
+}
+function viewCancelamento(){
+  seo('Cancelamento e remarcação | '+NAME,'Como funcionam cancelamento e remarcação de pacotes e excursões da Brazil Viagem.');
+  return '<div class="page-head"><div class="wrap"><h1>Cancelamento e remarcação</h1></div></div><div class="wrap narrow sec"><div class="prose"><h2>Cada viagem tem suas regras</h2><p>Prazos e multas dependem das companhias aéreas, hotéis e demais fornecedores de cada pacote. A agência informa essas condições antes do pagamento.</p><h2>Remarcação</h2><p>Mudanças de data são sujeitas à disponibilidade e podem ter taxas. Fale com a agência o quanto antes.</p><h2>Seguro viagem</h2><p>Recomendamos contratar seguro viagem, que pode cobrir imprevistos de saúde, bagagem e, em alguns casos, cancelamento.</p><h2>Como solicitar</h2><p>Envie o pedido pelo canal de atendimento, informando o nome do titular e a viagem contratada.</p></div></div>';
+}
+/* ========== admin: base, painel, listas ========== */
+const ADM={tab:'painel',edit:null,draft:null};
+const PASS='agencia';
+const normPass=s=>norm(s);
+const tit=id=>{const v=DB.viagens.find(x=>x.id===id);return v?v.titulo:id};
+const top=(o,n)=>Object.entries(o||{}).sort((a,b)=>b[1]-a[1]).slice(0,n||5);
+
+function viewAdmin(){
+  seo('Área da agência | '+NAME,'Área restrita da agência.');
+  if(!isAdmin())return '<div class="wrap narrow"><div class="login"><h1>Área da agência</h1><p class="muted">Entre para cadastrar viagens e guias e acompanhar os pedidos de cotação.</p><form id="login" novalidate><label class="fld"><span>Senha</span><input class="in" type="password" id="pw" autocomplete="current-password"></label><p class="err" id="pw-err" hidden style="margin:8px 0">Senha incorreta.</p><button class="btn btn-p" type="submit" style="margin-top:12px">Entrar</button></form></div></div>';
+  return '<div class="wrap"><div class="adm-top"><h1>Painel da agência</h1><div class="row"><a class="btn btn-g btn-sm" href="#inicio">Ver o site</a><button class="btn btn-g btn-sm" type="button" data-act="logout">Sair</button></div></div>'
+   +'<div class="tabs" role="tablist" id="adm-tabs"></div><div class="adm" id="adm"></div></div>';
+}
+function drawTabs(){
+  const novos=PED.filter(p=>p.status==='novo').length;
+  const t=[['painel','Painel'],['viagens','Viagens'],['guias','Guias'],['pedidos','Pedidos'],['config','Configurações']];
+  const el=$('#adm-tabs');if(!el)return;
+  el.innerHTML=t.map(x=>'<button type="button" role="tab" data-act="tab" data-tab="'+x[0]+'" aria-selected="'+(ADM.tab===x[0])+'">'+x[1]+(x[0]==='pedidos'&&novos?'<span class="n">'+novos+'</span>':'')+'</button>').join('');
+}
+function drawAdmin(){
+  if(!isAdmin())return;drawTabs();const el=$('#adm');if(!el)return;
+  const f={painel:admPainel,viagens:admViagens,guias:admGuias,pedidos:admPedidos,config:admConfig}[ADM.tab];
+  el.innerHTML=f();
+}
+function admPainel(){
+  const pub=DB.viagens.filter(visivel),venc=DB.viagens.filter(v=>v.publicado&&vencida(v)),semFoto=DB.viagens.filter(v=>!v.imagem),poucas=DB.viagens.filter(v=>v.vagas!==''&&v.vagas!=null&&Number(v.vagas)>=0&&Number(v.vagas)<=3);
+  const novos=PED.filter(p=>p.status==='novo').length;
+  const alerts=[];
+  if(!hasWA())alerts.push('Configure o número do WhatsApp em Configurações. Enquanto isso, os botões do site abrem o WhatsApp sem destinatário.');
+  if(venc.length)alerts.push(venc.length+' viagem(ns) vencida(s) fora do ar: '+venc.map(v=>esc(v.titulo)).join(', ')+'. Atualize as datas.');
+  if(poucas.length)alerts.push('Poucas vagas: '+poucas.map(v=>esc(v.titulo)).join(', ')+'.');
+  if(semFoto.length)alerts.push(semFoto.length+' viagem(ns) ainda usam capa ilustrada. Fotos reais vendem mais.');
+  const list=(o,f)=>top(o).length?'<ol class="ul">'+top(o).map(x=>'<li>'+esc(f?f(x[0]):x[0])+' <b>'+x[1]+'</b></li>').join('')+'</ol>':'<p class="muted">Aparece aqui conforme os clientes usam o site.</p>';
+  return '<div class="stats"><div class="stat"><b>'+pub.length+'</b><span>viagens no ar</span></div><div class="stat"><b>'+DB.posts.filter(p=>p.publicado).length+'</b><span>guias publicados</span></div><div class="stat"><b>'+novos+'</b><span>pedidos novos</span></div><div class="stat"><b>'+PED.length+'</b><span>pedidos no total</span></div></div>'
+   +'<div class="row"><button class="btn btn-p" type="button" data-act="nova-viagem">Cadastrar viagem</button><button class="btn btn-g" type="button" data-act="novo-guia">Escrever guia</button></div>'
+   +(alerts.length?'<div class="panel"><h2>Para resolver</h2><ul class="ul">'+alerts.map(a=>'<li>'+a+'</li>').join('')+'</ul></div>':'')
+   +'<div class="panel"><h2>Viagens mais vistas</h2>'+list(ST.views,tit)+'</div><div class="panel"><h2>Cliques para falar com a agência</h2>'+list(ST.wa,k=>k==='geral'?'Botão geral':tit(k))+'</div><div class="panel"><h2>Destinos mais pedidos</h2>'+list(ST.buscas)+'</div>';
+}
+function viagemStatus(v){if(!v.publicado)return '<span class="pill">Rascunho</span>';if(vencida(v))return '<span class="pill pill-bad">Vencida</span>';return '<span class="pill pill-ok">No ar</span>'}
+function admViagens(){
+  if(ADM.edit)return formViagem();
+  return '<div class="row" style="justify-content:space-between"><h2 style="font-size:1.1rem">Viagens ('+DB.viagens.length+')</h2><button class="btn btn-p" type="button" data-act="nova-viagem">Cadastrar viagem</button></div><div class="panel">'
+   +(DB.viagens.length?DB.viagens.map(v=>'<div class="ritem"><img alt="" src="'+esc(capa(v))+'"><div><h3>'+esc(v.titulo)+'</h3><div class="muted" style="font-size:.85rem">'+esc(v.destino)+' · '+brl(v.preco)+' · '+((datasFut(v)||[]).length)+' data(s) futura(s)</div>'+viagemStatus(v)+'</div>'
+   +'<div class="acts"><button class="btn btn-g btn-sm" type="button" data-act="edit-viagem" data-id="'+esc(v.id)+'">Editar</button><a class="btn btn-g btn-sm" href="#viagem-'+esc(v.id)+'">Ver no site</a><button class="btn btn-g btn-sm" type="button" data-act="pub-viagem" data-id="'+esc(v.id)+'">'+(v.publicado?'Tirar do ar':'Publicar')+'</button><button class="btn btn-g btn-sm" type="button" data-act="dup-viagem" data-id="'+esc(v.id)+'">Duplicar</button><button class="btn btn-d btn-sm" type="button" data-act="del-viagem" data-id="'+esc(v.id)+'">Excluir</button></div></div>').join(''):'<p class="muted">Nenhuma viagem cadastrada.</p>')+'</div>';
+}
+function admGuias(){
+  if(ADM.edit)return formGuia();
+  return '<div class="row" style="justify-content:space-between"><h2 style="font-size:1.1rem">Guias de destino ('+DB.posts.length+')</h2><button class="btn btn-p" type="button" data-act="novo-guia">Escrever guia</button></div><div class="panel">'
+   +(DB.posts.length?DB.posts.map(p=>'<div class="ritem"><img alt="" src="'+esc(capa(p))+'"><div><h3>'+esc(p.titulo)+'</h3><div class="muted" style="font-size:.85rem">'+esc(p.destino)+' · atualizado em '+fmtData(p.data)+'</div><span class="pill '+(p.publicado?'pill-ok':'')+'">'+(p.publicado?'Publicado':'Rascunho')+'</span></div>'
+   +'<div class="acts"><button class="btn btn-g btn-sm" type="button" data-act="edit-guia" data-id="'+esc(p.id)+'">Editar</button><a class="btn btn-g btn-sm" href="#guia-'+esc(p.id)+'">Ver no site</a><button class="btn btn-g btn-sm" type="button" data-act="pub-guia" data-id="'+esc(p.id)+'">'+(p.publicado?'Tirar do ar':'Publicar')+'</button><button class="btn btn-d btn-sm" type="button" data-act="del-guia" data-id="'+esc(p.id)+'">Excluir</button></div></div>').join(''):'<p class="muted">Nenhum guia ainda.</p>')+'</div>';
+}
+function waCliente(p){let n=digits(p.whats);if(n.length<=11)n='55'+n;return 'https://wa.me/'+n}
+function admPedidos(){
+  if(!PED.length)return '<div class="panel"><h2>Pedidos</h2><p class="muted">Os pedidos feitos na página Monte sua viagem aparecem aqui.</p></div>';
+  const ST_=[['novo','Novo'],['atendimento','Em atendimento'],['fechado','Fechado'],['perdido','Perdido']];
+  return '<div class="panel"><h2>Pedidos de cotação ('+PED.length+')</h2>'+PED.map(p=>'<details style="border-bottom:1px solid var(--line);padding:6px 0"><summary style="cursor:pointer;font-weight:700;padding:8px 0">'+esc(p.nome)+' · '+esc(p.destino)+' <span class="pill '+(p.status==='novo'?'pill-warn':'')+'">'+(ST_.find(s=>s[0]===p.status)||[0,p.status])[1]+'</span></summary>'
+   +'<div style="display:grid;gap:8px;padding:6px 0 14px;font-size:.92rem"><div class="muted">Recebido em '+fmtLonga(p.criado.slice(0,10))+'</div>'
+   +'<div>WhatsApp: <span class="copyable">'+esc(p.whats)+'</span>'+(p.email?' · E-mail: <span class="copyable">'+esc(p.email)+'</span>':'')+'</div>'
+   +'<div>'+(p.saida?'Saindo de '+esc(p.saida)+'. ':'')+(p.ida?'Ida '+fmtData(p.ida)+(p.volta?', volta '+fmtData(p.volta):'')+'. ':(p.mes?'Mês: '+esc(p.mes)+'. ':''))+(p.flex?'Datas flexíveis. ':'')+p.adultos+' adulto(s)'+(p.criancas?', '+p.criancas+' criança(s)'+(p.idades?' ('+esc(p.idades)+')':''):'')+'.</div>'
+   +(p.orc?'<div>Orçamento: '+esc(p.orc)+'</div>':'')+((p.perfil||[]).length?'<div class="tags">'+p.perfil.map(t=>'<span class="tag">'+esc(t)+'</span>').join('')+'</div>':'')+(p.obs?'<div>Obs.: '+esc(p.obs)+'</div>':'')
+   +'<div class="row"><select class="in" style="width:auto" data-ped="'+esc(p.id)+'">'+opts(ST_,p.status)+'</select><a class="btn btn-wa btn-sm" target="_blank" rel="noopener" href="'+esc(waCliente(p))+'">Chamar no WhatsApp</a><button class="btn btn-d btn-sm" type="button" data-act="del-ped" data-id="'+esc(p.id)+'">Excluir</button></div></div></details>').join('')+'</div>';
+}
+function admConfig(){
+  if(!ADM.draft||ADM.kind!=='cfg'){ADM.draft=clone(CFG);ADM.kind='cfg'}
+  const d=ADM.draft,F=(l,h,hint)=>'<label class="fld"><span>'+l+'</span>'+h+(hint?'<small>'+hint+'</small>':'')+'</label>';
+  return '<div class="panel"><h2>Dados da agência</h2><div class="g2">'
+   +F('WhatsApp com DDI e DDD',inp('whatsapp',d.whatsapp,'inputmode="tel"'),'Ex.: 55 + DDD + número. Sem número, os botões abrem o WhatsApp sem destinatário.')+F('E-mail',inp('email',d.email))
+   +F('Instagram (sem @)',inp('instagram',d.instagram))+F('Cidade e estado',inp('cidade',d.cidade))
+   +F('Cadastur',inp('cadastur',d.cadastur),'Aparece no rodapé quando preenchido.')+F('CNPJ',inp('cnpj',d.cnpj))
+   +F('Horário de atendimento',inp('horario',d.horario))+'</div>'
+   +'<div class="fld"><span>Foto da capa do site (opcional)</span>'+(d.heroImagem?'<img class="preview" alt="" src="'+esc(d.heroImagem)+'">':'<small>Sem foto, o site usa uma ilustração.</small>')
+   +'<div class="row"><input type="file" accept="image/*" data-file="hero"><button class="btn btn-g btn-sm" type="button" data-act="hero-del">Remover foto</button></div></div>'
+   +'<div class="row"><button class="btn btn-p" type="button" data-act="cfg-save">Salvar configurações</button></div></div>'
+   +'<div class="panel"><h2>Backup e restauração</h2><p class="muted" style="font-size:.9rem">Os dados ficam salvos neste navegador. Gere o backup para guardar uma cópia ou levar para outro computador.</p><div class="row"><button class="btn btn-g btn-sm" type="button" data-act="backup">Gerar backup</button></div>'
+   +'<textarea class="in" id="bk" rows="4" hidden readonly></textarea><div class="row" id="bk-row" hidden><button class="btn btn-g btn-sm" type="button" data-act="bk-copy">Copiar</button></div>'
+   +'<label class="fld"><span>Restaurar backup</span><textarea class="in" id="rs" rows="3" placeholder="Cole aqui o backup"></textarea></label><div class="row"><input type="file" accept=".json,application/json" data-file="restore"><button class="btn btn-g btn-sm" type="button" data-act="restore">Restaurar</button></div></div>'
+   +'<div class="panel"><h2>Recomeçar</h2><p class="muted" style="font-size:.9rem">Apaga viagens, guias e pedidos deste navegador e volta ao conteúdo inicial.</p><div class="row"><button class="btn btn-d btn-sm" type="button" data-act="reset">Restaurar dados iniciais</button></div></div>';
+}
+/* ========== admin: formulários ========== */
+const inp=(p,v,a)=>'<input class="in" data-bind="'+p+'" value="'+esc(v)+'" '+(a||'')+'>';
+const num=(p,v,a)=>'<input class="in" type="number" inputmode="decimal" data-t="num" data-bind="'+p+'" value="'+esc(v)+'" '+(a||'')+'>';
+const ta=(p,v,r,a)=>'<textarea class="in" rows="'+(r||3)+'" data-bind="'+p+'" '+(a||'')+'>'+esc(v)+'</textarea>';
+const lines=(p,arr,r)=>'<textarea class="in" rows="'+(r||4)+'" data-t="lines" data-bind="'+p+'">'+esc((arr||[]).join('\n'))+'</textarea>';
+const sel=(p,v,o)=>'<select class="in" data-bind="'+p+'">'+opts(o,v)+'</select>';
+const chkb=(p,v,l)=>'<label class="chk"><input type="checkbox" data-t="bool" data-bind="'+p+'"'+(v?' checked':'')+'><span>'+l+'</span></label>';
+const FL=(l,h,hint)=>'<label class="fld"><span>'+l+'</span>'+h+(hint?'<small>'+hint+'</small>':'')+'</label>';
+function getPath(o,p){return p.split('.').reduce((a,k)=>a==null?a:a[k],o)}
+function setPath(o,p,v){const ks=p.split('.'),last=ks.pop(),t=ks.reduce((a,k)=>a[k],o);t[last]=v}
+function bindInput(el){
+  if(!ADM.draft)return;const t=el.dataset.t;let v;
+  if(t==='num')v=el.value===''?'':Number(el.value);else if(t==='bool')v=el.checked;else if(t==='lines')v=el.value.split('\n').map(s=>s.trim()).filter(Boolean);else v=el.value;
+  try{setPath(ADM.draft,el.dataset.bind,v)}catch(e){}
+}
+function fileToDataURL(file,max,q){
+  return new Promise((res,rej)=>{const fr=new FileReader();fr.onerror=rej;fr.onload=()=>{const im=new Image();im.onerror=rej;im.onload=()=>{
+    const sc=Math.min(1,(max||1100)/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*sc);c.height=Math.round(im.height*sc);
+    c.getContext('2d').drawImage(im,0,0,c.width,c.height);res(c.toDataURL('image/jpeg',q||.78))};im.src=fr.result};fr.readAsDataURL(file)});
+}
+function photoBlock(d,what){
+  return '<div class="fld"><span>Foto de capa</span><img class="preview" alt="" src="'+esc(capa(d))+'">'
+   +'<div class="row"><input type="file" accept="image/*" data-file="'+what+'">'+(d.imagem?'<button class="btn btn-g btn-sm" type="button" data-act="img-del">Remover foto</button>':'')+'</div>'
+   +(d.imagem?'':'<small>Sem foto, o site usa uma capa ilustrada. Escolha o estilo abaixo.</small>')
+   +(d.imagem?'':'<select class="in" data-bind="cena" style="max-width:260px">'+opts(CENAS,d.cena)+'</select>')+'</div>';
+}
+
+/* ----- viagem ----- */
+function newViagem(){return {id:'',titulo:'',destino:'',pais:'Brasil',tipo:'pacote',saida:(DB.viagens[0]&&DB.viagens[0].saida)||'',transporte:'Aéreo',dias:5,noites:4,preco:'',precoOriginal:'',parcelas:10,precoRef:'por pessoa, em quarto duplo',vagas:'',validade:'',destaque:false,publicado:true,descricao:'',tags:[],datas:[''],inclui:[],naoInclui:[],roteiro:[{quando:'',titulo:'',texto:''}],documentos:DOC_NAC,condicoes:DEFAULT_COND,imagem:'',cena:'praia'}}
+function formViagem(){
+  const d=ADM.draft;if(!d)return '';
+  return '<div class="row" style="justify-content:space-between"><h2 style="font-size:1.1rem">'+(ADM.edit==='new'?'Nova viagem':'Editar viagem')+'</h2><button class="btn btn-g btn-sm" type="button" data-act="cancel">Voltar</button></div>'
+   +'<div class="panel"><h2>Dados principais</h2><div class="g2">'+FL('Título',inp('titulo',d.titulo))+FL('Destino principal',inp('destino',d.destino,'list="dl-destinos"'),'Liga a viagem ao guia do mesmo destino.')
+   +FL('País',inp('pais',d.pais))+FL('Tipo',sel('tipo',d.tipo,[['pacote','Pacote'],['excursao','Excursão em grupo']]))
+   +FL('Saída de',inp('saida',d.saida))+FL('Transporte',inp('transporte',d.transporte))
+   +FL('Dias',num('dias',d.dias,'min="1"'))+FL('Noites',num('noites',d.noites,'min="0"'))+'</div><datalist id="dl-destinos">'+destinos().map(x=>'<option value="'+esc(x)+'">').join('')+'</datalist>'
+   +FL('Descrição',ta('descricao',d.descricao,5),'Use uma linha em branco para separar parágrafos.')+'</div>'
+   +'<div class="panel"><h2>Preço e vagas</h2><div class="g2">'+FL('Preço por pessoa (R$)',num('preco',d.preco,'min="0" step="0.01"'))+FL('Preço antigo, riscado (opcional)',num('precoOriginal',d.precoOriginal,'min="0" step="0.01"'))
+   +FL('Parcelas',num('parcelas',d.parcelas,'min="1"'))+FL('Condição do preço',inp('precoRef',d.precoRef),'Aparece junto do preço. Evita dúvida.')
+   +FL('Vagas restantes (opcional)',num('vagas',d.vagas,'min="0"'),'Aparece quando restam 8 ou menos. Use 0 para lista de espera.')+FL('Preço válido até (opcional)',inp('validade',d.validade,'type="date"'),'Depois da data, a viagem sai do ar sozinha.')+'</div>'
+   +chkb('destaque',d.destaque,'Mostrar em Saídas em destaque')+chkb('publicado',d.publicado,'Publicada (visível no site)')+'</div>'
+   +'<div class="panel"><h2>Datas de saída</h2>'+(d.datas||[]).map((x,i)=>'<div class="row"><input class="in" style="width:auto" type="date" data-bind="datas.'+i+'" value="'+esc(x)+'"><button class="btn btn-g btn-sm" type="button" data-act="del-data" data-i="'+i+'">Remover</button></div>').join('')
+   +'<div class="row"><button class="btn btn-g btn-sm" type="button" data-act="add-data">Adicionar data</button></div><small class="muted">Sem datas, a viagem aparece como "datas sob consulta". Datas passadas somem sozinhas.</small></div>'
+   +'<div class="panel"><h2>Tags</h2><div class="pills">'+allTags().map(t=>'<button type="button" class="chip" data-act="tag-toggle" data-tag="'+esc(t)+'" aria-pressed="'+((d.tags||[]).includes(t))+'">'+esc(t)+'</button>').join('')+'</div>'
+   +'<div class="row"><input class="in" style="max-width:260px" id="tag-in" placeholder="Nova tag"><button class="btn btn-g btn-sm" type="button" data-act="tag-add">Adicionar tag</button></div></div>'
+   +'<div class="panel"><h2>Foto</h2>'+photoBlock(d,'viagem')+'</div>'
+   +'<div class="panel"><h2>O que está incluído</h2>'+FL('Incluído (um item por linha)',lines('inclui',d.inclui,5))+FL('Não incluído (um item por linha)',lines('naoInclui',d.naoInclui,4))+'</div>'
+   +'<div class="panel"><h2>Roteiro</h2>'+(d.roteiro||[]).map((r,i)=>'<div class="rrow"><div class="g2">'+FL('Quando',inp('roteiro.'+i+'.quando',r.quando||'','placeholder="Dia '+(i+1)+'"'))+FL('Título',inp('roteiro.'+i+'.titulo',r.titulo))+'</div>'+FL('Texto',ta('roteiro.'+i+'.texto',r.texto,3))+'<div><button class="btn btn-d btn-sm" type="button" data-act="del-dia" data-i="'+i+'">Remover este dia</button></div></div>').join('')
+   +'<div class="row"><button class="btn btn-g btn-sm" type="button" data-act="add-dia">Adicionar dia</button></div></div>'
+   +'<div class="panel"><h2>Documentos e condições</h2>'+FL('Documentos necessários',ta('documentos',d.documentos,3))+FL('Pagamento e cancelamento',ta('condicoes',d.condicoes,4))+'</div>'
+   +'<div class="bar"><button class="btn btn-p" type="button" data-act="save-viagem">Salvar viagem</button><button class="btn btn-g" type="button" data-act="cancel">Cancelar</button></div>';
+}
+function saveViagem(){
+  const d=ADM.draft,miss=[];
+  if(!String(d.titulo).trim())miss.push('título');if(!String(d.destino).trim())miss.push('destino');if(!(Number(d.preco)>0))miss.push('preço');
+  if(miss.length){toast('Falta preencher: '+miss.join(', ')+'.');return}
+  const v=clone(d),N=x=>x===''||x==null?'':Number(x);
+  v.titulo=v.titulo.trim();v.destino=v.destino.trim();v.preco=Number(v.preco);v.precoOriginal=N(v.precoOriginal);v.vagas=N(v.vagas);v.parcelas=Number(v.parcelas)||1;v.dias=Number(v.dias)||1;v.noites=Number(v.noites)||0;
+  v.datas=Array.from(new Set((d.datas||[]).filter(Boolean))).sort();
+  v.roteiro=(d.roteiro||[]).filter(r=>String(r.titulo).trim()||String(r.texto).trim());
+  if(!v.id){let b=slug(v.titulo)||'viagem',id=b,i=2;while(DB.viagens.some(x=>x.id===id))id=b+'-'+(i++);v.id=id}
+  const i=DB.viagens.findIndex(x=>x.id===v.id);if(i>=0)DB.viagens[i]=v;else DB.viagens.unshift(v);
+  if(save(K.db,DB)){toast('Viagem salva.');ADM.edit=null;ADM.draft=null;drawAdmin()}
+}
+
+/* ----- guia ----- */
+function newGuia(){return {id:'',titulo:'',destino:'',cena:'praia',data:hoje(),publicado:true,resumo:'',respostaRapida:'',melhorEpoca:'',tempMedia:'',clima:Array.from({length:12},()=>['','',1]),corpo:'',faq:[{q:'',a:''}],imagem:''}}
+function formGuia(){
+  const d=ADM.draft;if(!d)return '';
+  if(!d.clima)d.clima=Array.from({length:12},()=>['','',1]);
+  return '<div class="row" style="justify-content:space-between"><h2 style="font-size:1.1rem">'+(ADM.edit==='new'?'Novo guia':'Editar guia')+'</h2><button class="btn btn-g btn-sm" type="button" data-act="cancel">Voltar</button></div>'
+   +'<div class="panel"><h2>Resposta direta</h2><p class="muted" style="font-size:.88rem">Buscadores e assistentes de IA citam respostas curtas e claras. Responda a pergunta principal já no começo.</p>'
+   +FL('Título',inp('titulo',d.titulo),'Ex.: Destino: melhor época para viajar, clima e o que fazer')+FL('Destino',inp('destino',d.destino,'list="dl-destinos"'))+'<datalist id="dl-destinos">'+destinos().map(x=>'<option value="'+esc(x)+'">').join('')+'</datalist>'
+   +FL('Resumo para o Google (até 160 caracteres)',ta('resumo',d.resumo,2))+FL('Resposta rápida',ta('respostaRapida',d.respostaRapida,4),'Melhor época, temperatura e quantos dias ficar, em 3 ou 4 frases.')
+   +'<div class="g2">'+FL('Melhor época',inp('melhorEpoca',d.melhorEpoca))+FL('Temperatura média',inp('tempMedia',d.tempMedia))+'</div></div>'
+   +'<div class="panel"><h2>Foto</h2>'+photoBlock(d,'guia')+'</div>'
+   +'<div class="panel"><h2>Clima mês a mês (opcional)</h2><div class="cgrid"><b></b><b>Mín.</b><b>Máx.</b><b>Chuva</b>'
+   +d.clima.map((r,i)=>'<span>'+MESL[i]+'</span><input class="in" type="number" data-t="cnum" data-bind="clima.'+i+'.0" value="'+esc(r[0])+'"><input class="in" type="number" data-t="cnum" data-bind="clima.'+i+'.1" value="'+esc(r[1])+'"><select class="in" data-t="cnum" data-bind="clima.'+i+'.2">'+opts([[0,'Baixa'],[1,'Média'],[2,'Alta']],r[2])+'</select>').join('')+'</div></div>'
+   +'<div class="panel"><h2>Texto do guia</h2>'+FL('Conteúdo',ta('corpo',d.corpo,14),'Use "## Título" para subtítulos, "- item" para listas e **negrito**.')+'</div>'
+   +'<div class="panel"><h2>Perguntas frequentes</h2>'+(d.faq||[]).map((f,i)=>'<div class="rrow">'+FL('Pergunta',inp('faq.'+i+'.q',f.q))+FL('Resposta',ta('faq.'+i+'.a',f.a,2))+'<div><button class="btn btn-d btn-sm" type="button" data-act="del-faq" data-i="'+i+'">Remover</button></div></div>').join('')
+   +'<div class="row"><button class="btn btn-g btn-sm" type="button" data-act="add-faq">Adicionar pergunta</button></div></div>'
+   +chkb('publicado',d.publicado,'Publicado (visível no site)')
+   +'<div class="bar"><button class="btn btn-p" type="button" data-act="save-guia">Salvar guia</button><button class="btn btn-g" type="button" data-act="cancel">Cancelar</button></div>';
+}
+function saveGuia(){
+  const d=ADM.draft,miss=[];
+  if(!String(d.titulo).trim())miss.push('título');if(!String(d.destino).trim())miss.push('destino');if(!String(d.respostaRapida).trim())miss.push('resposta rápida');
+  if(miss.length){toast('Falta preencher: '+miss.join(', ')+'.');return}
+  const p=clone(d);p.titulo=p.titulo.trim();p.destino=p.destino.trim();p.data=hoje();
+  p.clima=p.clima&&p.clima.some(r=>r[0]!==''&&r[1]!=='')?p.clima.map(r=>[r[0]===''?'':Number(r[0]),r[1]===''?'':Number(r[1]),Number(r[2])||0]):null;
+  p.faq=(p.faq||[]).filter(f=>String(f.q).trim()&&String(f.a).trim());
+  if(!p.id){let b=slug(p.titulo)||'guia',id=b,i=2;while(DB.posts.some(x=>x.id===id))id=b+'-'+(i++);p.id=id}
+  const i=DB.posts.findIndex(x=>x.id===p.id);if(i>=0)DB.posts[i]=p;else DB.posts.unshift(p);
+  if(save(K.db,DB)){toast('Guia salvo.');ADM.edit=null;ADM.draft=null;drawAdmin()}
+}
+/* ========== rotas ========== */
+let lastHash=null;
+function go(h){if(location.hash==='#'+h)route();else location.hash=h}
+function route(){
+  const h=(location.hash||'#inicio').slice(1)||'inicio';
+  document.body.dataset.route=h.split('-')[0];
+  let html;
+  if(h==='inicio')html=viewHome();
+  else if(h==='viagens')html=viewViagens();
+  else if(h.startsWith('viagem-'))html=viewViagem(h.slice(7));
+  else if(h==='blog')html=viewBlog();
+  else if(h.startsWith('guia-'))html=viewGuia(h.slice(5));
+  else if(h==='monte-sua-viagem')html=viewMonte();
+  else if(h==='sobre')html=viewSobre();
+  else if(h==='privacidade')html=viewPrivacidade();
+  else if(h==='cancelamento')html=viewCancelamento();
+  else if(h==='admin'){html=viewAdmin()}
+  else html=notFound();
+  $('#main').innerHTML=html;
+  drawHead(h);drawFoot();
+  $('#nav').removeAttribute('data-open');
+  const mb=$('.menu-btn');if(mb)mb.setAttribute('aria-expanded','false');
+  if(h==='viagens'){drawResults();const fb=$('#fbox');if(fb&&window.matchMedia&&window.matchMedia('(min-width:960px)').matches)fb.open=true}
+  if(h.startsWith('viagem-')){const v=DB.viagens.find(x=>x.id===h.slice(7));updateTrip(v)}
+  if(h==='admin'&&isAdmin()){ADM.edit=null;ADM.draft=null;ADM.kind=null;drawAdmin()}
+  if(lastHash!==h)window.scrollTo(0,0);
+  lastHash=h;
+}
+
+/* ========== eventos ========== */
+function arm(btn,fn){
+  if(btn.dataset.armed){fn();return}
+  btn.dataset.armed='1';const o=btn.textContent;btn.textContent='Clique de novo para confirmar';btn.classList.add('armed');
+  setTimeout(()=>{if(btn.isConnected){delete btn.dataset.armed;btn.textContent=o;btn.classList.remove('armed')}},3500);
+}
+function tabTo(t){ADM.tab=t;ADM.edit=null;ADM.draft=null;ADM.kind=null;drawAdmin()}
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-act]');if(!t)return;const a=t.dataset.act,id=t.dataset.id;
+  switch(a){
+   case 'menu':{const n=$('#nav'),o=!n.hasAttribute('data-open');o?n.setAttribute('data-open',''):n.removeAttribute('data-open');t.setAttribute('aria-expanded',String(o));break}
+   case 'wa':track('wa',id);break;
+   case 'quicktag':Object.assign(Q,{destino:'',mes:'',saida:'',grupo:'',orc:'',tipo:'',tags:[t.dataset.tag],ord:'rel'});go('viagens');break;
+   case 'ftipo':Q.tipo=t.dataset.v;$$('[data-act="ftipo"]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===Q.tipo)));drawResults();break;
+   case 'ftag':{const g=t.dataset.tag,i=Q.tags.indexOf(g);i>=0?Q.tags.splice(i,1):Q.tags.push(g);t.setAttribute('aria-pressed',String(i<0));drawResults();break}
+   case 'limpar':Object.assign(Q,{destino:'',mes:'',saida:'',grupo:'',orc:'',tags:[],tipo:'',ord:'rel'});route();break;
+   case 'pre-monte':PRE={destino:t.dataset.dest!==undefined?t.dataset.dest:Q.destino,mes:Q.mes};break;
+   case 'step':{const k=t.dataset.k,d=Number(t.dataset.d);TS[k]=Math.max(k==='adultos'?1:0,Math.min(20,TS[k]+d));const v=DB.viagens.find(x=>x.id===(location.hash.slice(8)));updateTrip(v);break}
+   case 'mtag':t.setAttribute('aria-pressed',String(t.getAttribute('aria-pressed')!=='true'));break;
+   case 'logout':setAdmin(false);drawHead('admin');route();break;
+   case 'tab':tabTo(t.dataset.tab);break;
+   case 'cancel':ADM.edit=null;ADM.draft=null;drawAdmin();break;
+   case 'nova-viagem':ADM.tab='viagens';ADM.edit='new';ADM.kind='viagem';ADM.draft=newViagem();drawAdmin();window.scrollTo(0,0);break;
+   case 'edit-viagem':{const v=DB.viagens.find(x=>x.id===id);if(v){ADM.edit=id;ADM.kind='viagem';ADM.draft=clone(v);if(!ADM.draft.datas.length)ADM.draft.datas=[''];if(!ADM.draft.roteiro.length)ADM.draft.roteiro=[{quando:'',titulo:'',texto:''}];drawAdmin();window.scrollTo(0,0)}break}
+   case 'dup-viagem':{const v=DB.viagens.find(x=>x.id===id);if(v){const c=clone(v);c.titulo+=' (cópia)';c.publicado=false;let b=slug(c.titulo),n=b,i=2;while(DB.viagens.some(x=>x.id===n))n=b+'-'+(i++);c.id=n;DB.viagens.unshift(c);if(save(K.db,DB)){toast('Cópia criada como rascunho.');drawAdmin()}}break}
+   case 'pub-viagem':{const v=DB.viagens.find(x=>x.id===id);if(v){v.publicado=!v.publicado;if(save(K.db,DB)){toast(v.publicado?'Viagem publicada.':'Viagem tirada do ar.');drawAdmin()}}break}
+   case 'del-viagem':arm(t,()=>{DB.viagens=DB.viagens.filter(x=>x.id!==id);if(save(K.db,DB)){toast('Viagem excluída.');drawAdmin()}});break;
+   case 'save-viagem':saveViagem();break;
+   case 'add-data':ADM.draft.datas.push('');drawAdmin();break;
+   case 'del-data':ADM.draft.datas.splice(Number(t.dataset.i),1);if(!ADM.draft.datas.length)ADM.draft.datas=[''];drawAdmin();break;
+   case 'add-dia':ADM.draft.roteiro.push({quando:'',titulo:'',texto:''});drawAdmin();break;
+   case 'del-dia':ADM.draft.roteiro.splice(Number(t.dataset.i),1);drawAdmin();break;
+   case 'tag-toggle':{const g=t.dataset.tag,l=ADM.draft.tags,i=l.indexOf(g);i>=0?l.splice(i,1):l.push(g);t.setAttribute('aria-pressed',String(i<0));break}
+   case 'tag-add':{const el=$('#tag-in'),g=el.value.trim();if(g&&!ADM.draft.tags.includes(g)){ADM.draft.tags.push(g);if(!BASE_TAGS.includes(g))BASE_TAGS.push(g);drawAdmin()}break}
+   case 'img-del':ADM.draft.imagem='';drawAdmin();break;
+   case 'novo-guia':ADM.tab='guias';ADM.edit='new';ADM.kind='guia';ADM.draft=newGuia();drawAdmin();window.scrollTo(0,0);break;
+   case 'edit-guia':{const p=DB.posts.find(x=>x.id===id);if(p){ADM.edit=id;ADM.kind='guia';ADM.draft=clone(p);if(!ADM.draft.faq||!ADM.draft.faq.length)ADM.draft.faq=[{q:'',a:''}];drawAdmin();window.scrollTo(0,0)}break}
+   case 'pub-guia':{const p=DB.posts.find(x=>x.id===id);if(p){p.publicado=!p.publicado;if(save(K.db,DB)){toast(p.publicado?'Guia publicado.':'Guia tirado do ar.');drawAdmin()}}break}
+   case 'del-guia':arm(t,()=>{DB.posts=DB.posts.filter(x=>x.id!==id);if(save(K.db,DB)){toast('Guia excluído.');drawAdmin()}});break;
+   case 'save-guia':saveGuia();break;
+   case 'add-faq':ADM.draft.faq.push({q:'',a:''});drawAdmin();break;
+   case 'del-faq':ADM.draft.faq.splice(Number(t.dataset.i),1);drawAdmin();break;
+   case 'del-ped':arm(t,()=>{PED=PED.filter(x=>x.id!==id);save(K.ped,PED);toast('Pedido excluído.');drawAdmin()});break;
+   case 'hero-del':ADM.draft.heroImagem='';drawAdmin();break;
+   case 'cfg-save':{const d=ADM.draft;CFG=Object.assign({},CFG,d);if(save(K.cfg,CFG)){toast('Configurações salvas.');drawHead('admin');drawFoot()}break}
+   case 'backup':{const b=$('#bk');b.value=JSON.stringify({db:DB,cfg:CFG,ped:PED});b.hidden=false;$('#bk-row').hidden=false;break}
+   case 'bk-copy':{const b=$('#bk');b.select();try{navigator.clipboard.writeText(b.value).then(()=>toast('Backup copiado.'),()=>toast('Selecionado. Use copiar do teclado.'))}catch(x){toast('Selecionado. Use copiar do teclado.')}break}
+   case 'restore':{try{const o=JSON.parse($('#rs').value);if(!o.db||!o.db.viagens||!o.db.posts)throw 0;DB=o.db;if(o.cfg)CFG=Object.assign(CFG,o.cfg);if(o.ped)PED=o.ped;save(K.db,DB);save(K.cfg,CFG);save(K.ped,PED);toast('Backup restaurado.');ADM.draft=null;drawHead('admin');drawFoot();drawAdmin()}catch(x){toast('Backup inválido. Confira o texto colado.')}break}
+   case 'reset':arm(t,()=>{DB=seedData();PED=[];ST={wa:{},views:{},buscas:{}};save(K.db,DB);save(K.ped,PED);save(K.st,ST);toast('Dados iniciais restaurados.');ADM.draft=null;drawAdmin()});break;
+  }
+});
+function onField(e){
+  const el=e.target;
+  if(el.dataset&&el.dataset.bind){bindInput(el);if(el.dataset.t==='cnum'){/* clima */const v=el.value;try{setPath(ADM.draft,el.dataset.bind,el.tagName==='SELECT'?Number(v):(v===''?'':Number(v)))}catch(x){}}return}
+  if(el.dataset&&el.dataset.f){Q[el.dataset.f]=el.value;drawResults();return}
+  if(el.id==='t-data'){TS.data=el.value;updateTrip(DB.viagens.find(x=>x.id===location.hash.slice(8)));return}
+  if(el.id==='t-idades'){TS.idades=el.value;updateTrip(DB.viagens.find(x=>x.id===location.hash.slice(8)));return}
+  if(el.id==='b-q'){drawBlogList();return}
+  if(el.dataset&&el.dataset.ped){const p=PED.find(x=>x.id===el.dataset.ped);if(p){p.status=el.value;save(K.ped,PED);drawTabs()}}
+}
+document.addEventListener('input',onField);
+document.addEventListener('change',e=>{
+  onField(e);const el=e.target;
+  if(el.dataset&&el.dataset.f==='destino'&&el.value.trim())track('buscas',el.value.trim());
+  if(el.dataset&&el.dataset.file){
+    const f=el.files&&el.files[0];if(!f)return;const kind=el.dataset.file;
+    if(kind==='restore'){const fr=new FileReader();fr.onload=()=>{$('#rs').value=String(fr.result)};fr.readAsText(f);return}
+    fileToDataURL(f,kind==='hero'?1600:1100,kind==='hero'?.75:.78).then(u=>{if(kind==='hero')ADM.draft.heroImagem=u;else ADM.draft.imagem=u;drawAdmin();toast('Foto adicionada. Salve para guardar.')}).catch(()=>toast('Não foi possível ler essa imagem.'));
+  }
+});
+document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.id==='tag-in'){e.preventDefault();const b=$('[data-act="tag-add"]');if(b)b.click()}});
+document.addEventListener('submit',e=>{
+  const f=e.target;e.preventDefault();
+  if(f.id==='hero-search'){
+    Object.assign(Q,{destino:$('#h-destino').value.trim(),mes:$('#h-mes').value,saida:$('#h-saida').value,grupo:$('#h-grupo').value,orc:'',tipo:'',tags:[],ord:'rel'});
+    if(Q.destino)track('buscas',Q.destino);go('viagens');
+  }else if(f.id==='monte')submitMonte();
+  else if(f.id==='login'){
+    if(normPass($('#pw').value)===PASS){setAdmin(true);route()}else{$('#pw-err').hidden=false}
+  }
+});
+window.bvBuscar=function(d){Object.assign(Q,{destino:d||'',mes:'',saida:'',grupo:'',orc:'',tipo:'',tags:[],ord:'rel'});go('viagens')};
+window.addEventListener('hashchange',route);
+route();
+})();
+</script>
+<script>
+(function(){
+'use strict';
+const $=s=>document.querySelector(s);
+const root=document.documentElement;
+const first=$('#intro');
+if(!first)return;
+const TPL=first.outerHTML;
+let cur=null;
+const h0=location.hash.replace('#','');
+if(h0&&h0!=='inicio')first.remove();else boot(first);
+
+function boot(intro){
+let seen=false;
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const rep=$('#i-replay');
+const stage=$('#i-stage'),track=$('#i-track'),cabin=$('#i-cabin'),wall=$('#i-wall'),pre=$('#i-pre'),bar=$('#i-bar');
+const v0=$('#i-v0'),v1=$('#i-v1'),sc0=$('#i-sc0'),mist=$('#i-mist'),skipB=$('#i-skip'),hint=$('#i-hint'),count=$('#i-count');
+const scs=[...intro.querySelectorAll('.i-sc')],cards=[...intro.querySelectorAll('.i-card')],dots=[...count.children];
+let mode='play',origin='50% 50%',scale=4,aborted=false,abortR;
+const abortP=new Promise(r=>{abortR=r});
+const ABORT={};
+const mob=()=>matchMedia('(max-width:720px),(max-aspect-ratio:1/1)').matches;
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const ease=t=>t*t*(3-2*t);
+const sleep=ms=>Promise.race([new Promise(r=>setTimeout(r,ms)),abortP.then(()=>{throw ABORT})]);
+function until(fn,max){return Promise.race([new Promise(res=>{const t0=performance.now();(function tick(){if(fn()||performance.now()-t0>max)return res();requestAnimationFrame(tick)})()}),abortP.then(()=>{throw ABORT})])}
+function mark(){try{sessionStorage.setItem('bv_intro','1')}catch(e){}}
+root.classList.add('intro-lock');
+
+/* ---- janelas ---- */
+function layout(){
+  if(!cabin.isConnected)return;
+  const W=stage.clientWidth,H=stage.clientHeight;let wins=[];
+  if(mob()){const w=Math.min(W*.66,H*.5);const hh=w*1.45;wins=[[(W-w)/2,(H-hh)/2,w,hh]]}
+  else{const w=Math.min(W*.22,H*.46),hh=w*1.42,g=w*.3,x0=(W-(3*w+2*g))/2;for(let i=0;i<3;i++)wins.push([x0+i*(w+g),(H-hh)/2,w,hh])}
+  cabin.querySelectorAll('.i-win,.i-head').forEach(n=>n.remove());wall.querySelectorAll('.i-head').forEach(n=>n.remove());
+  let d='M0 0H'+W+'V'+H+'H0Z';
+  wins.forEach(([x,y,w,hh])=>{
+    const rx=w*.36,ry=hh*.2;
+    d+='M'+(x+rx)+' '+y+'H'+(x+w-rx)+'A'+rx+' '+ry+' 0 0 1 '+(x+w)+' '+(y+ry)+'V'+(y+hh-ry)+'A'+rx+' '+ry+' 0 0 1 '+(x+w-rx)+' '+(y+hh)+'H'+(x+rx)+'A'+rx+' '+ry+' 0 0 1 '+x+' '+(y+hh-ry)+'V'+(y+ry)+'A'+rx+' '+ry+' 0 0 1 '+(x+rx)+' '+y+'Z';
+    const el=document.createElement('div');el.className='i-win';
+    el.style.cssText='left:'+x+'px;top:'+y+'px;width:'+w+'px;height:'+hh+'px';
+    el.innerHTML='<div class="i-shade"></div><div class="i-win-fr"></div>';
+    cabin.appendChild(el);
+    const hd=document.createElement('div');hd.className='i-head';const hy=y+hh+hh*.07;hd.style.cssText='left:'+(x+w*.06)+'px;top:'+hy+'px;width:'+(w*.88)+'px;height:'+(H-hy+40)+'px';wall.appendChild(hd);
+  });
+  wall.style.clipPath="path(evenodd,'"+d+"')";
+  const m=wins[Math.floor(wins.length/2)];
+  origin=(m[0]+m[2]/2)+'px '+(m[1]+m[3]/2)+'px';
+  scale=Math.max(W/m[2],H/m[3])*1.55;
+  cabin.style.transformOrigin=origin;
+}
+
+/* ---- carregamento ---- */
+function loadAll(){
+  let tot=2+5,got=0;const setBar=()=>{bar.style.transform='scaleX('+Math.max(.04,got/tot)+')'};
+  const ps=[];
+  [v0,v1].forEach(v=>ps.push(new Promise(res=>{
+    const ok=()=>{if(v.readyState>=3){v.removeEventListener('canplaythrough',ok);v.removeEventListener('loadeddata',ok2);got++;setBar();res()}};
+    const ok2=()=>{if(v.readyState>=3)ok()};
+    v.addEventListener('canplaythrough',ok);v.addEventListener('error',()=>res(),true);
+    if(v.readyState>=3)ok();v.load&&0;
+  })));
+  ['noronha','gramado','lencois','bariloche','lisboa'].forEach(n=>ps.push(new Promise(res=>{const im=new Image();im.onload=im.onerror=()=>{got++;setBar();res()};im.src='/brazil/assets/'+n+'.jpg'})));
+  return Promise.race([Promise.all(ps),sleep(8000)]);
+}
+
+/* ---- estados ---- */
+function finish(){
+  mode='scroll';root.classList.remove('intro-lock');mark();
+  hint.classList.add('is-in');count.classList.add('is-in');
+  skipB.textContent='Ir direto ao site';rep.hidden=false;
+  dirty=true;requestAnimationFrame(apply);
+  if(!RM)autoTour();
+}
+function endState(){
+  try{v0.pause()}catch(e){}
+  sc0.classList.add('on');
+  try{v1.pause();if(v1.duration&&isFinite(v1.duration))v1.currentTime=Math.max(0,v1.duration-.05)}catch(e){}
+  intro.classList.add('i-done');
+  cards[0].classList.add('is-in');
+  finish();
+}
+function leave(){
+  mark();root.classList.remove('intro-lock');
+  try{v0.pause();v1.pause()}catch(e){}
+  intro.remove();
+  window.removeEventListener('scroll',onScroll);window.removeEventListener('resize',onResize);
+  window.scrollTo(0,0);
+}
+
+
+/* ---- passeio automático pelas cenas ---- */
+let tourOn=false;
+function stopTour(){tourOn=false;['wheel','touchstart','keydown','mousedown'].forEach(t=>window.removeEventListener(t,stopTour))}
+async function autoTour(){
+  tourOn=true;['wheel','touchstart','keydown','mousedown'].forEach(t=>window.addEventListener(t,stopTour,{passive:true}));
+  const total=()=>track.offsetHeight-stage.clientHeight;
+  try{
+    await sleep(2300);
+    for(let i=1;i<=4&&tourOn&&intro.isConnected;i++){
+      const y0=window.scrollY,y1=total()*i/4,t0=performance.now(),D=1500;
+      await new Promise(res=>{(function f(now){
+        if(!tourOn||!intro.isConnected)return res();
+        const t=clamp((now-t0)/D);window.scrollTo(0,y0+(y1-y0)*ease(t));
+        if(t<1)requestAnimationFrame(f);else res()})(t0)});
+      if(i<4)await sleep(1700);
+    }
+  }catch(e){if(e!==ABORT)throw e}
+  stopTour();
+}
+
+/* ---- sequência ---- */
+async function run(){
+  try{
+    await loadAll();
+    pre.classList.add('out');
+    if(RM){endState();return}
+    await sleep(350);
+    v0.playbackRate=1.9;
+    let ok=true;try{await v0.play()}catch(e){ok=false}
+    if(!ok){endState();return}
+    v0.playbackRate=1.9;
+    cabin.classList.add('up');
+    await sleep(550);
+    cabin.style.transition='transform 1.7s cubic-bezier(.62,0,.18,1)';
+    cabin.style.transform='scale('+scale+')';
+    await sleep(950);
+    cabin.classList.add('fade');
+    const dur0=v0.duration||7.9;
+    await until(()=>v0.ended||v0.currentTime>=dur0-1.5,15000);
+    sc0.classList.add('on');
+    v1.playbackRate=1.7;
+    try{await v1.play()}catch(e){endState();return}
+    v1.playbackRate=1.7;
+    await sleep(900);
+    intro.classList.add('i-done');v0.pause();
+    const dur1=v1.duration||7.9;
+    await until(()=>v1.currentTime>=dur1*.62||v1.ended,15000);
+    cards[0].classList.add('is-in');
+    await until(()=>v1.ended||v1.currentTime>=dur1-.15,10000);
+    finish();
+  }catch(e){if(e!==ABORT)throw e}
+}
+skipB.addEventListener('click',()=>{
+  if(mode==='play'){aborted=true;abortR();endState()}else leave();
+});
+
+/* ---- cenas com rolagem (pin) ---- */
+let dirty=true;
+function apply(){
+  dirty=false;
+  if(!intro.isConnected)return;
+  const r=track.getBoundingClientRect(),H=stage.clientHeight,total=r.height-H;
+  if(r.bottom<-50||r.top>H+50)return;
+  const p=clamp(-r.top/total),s=p*4;
+  const u=[0];
+  for(let i=1;i<=4;i++){let t=ease(clamp((s-(i-1)-.28)/.44));if(RM)t=t>.5?1:0;u[i]=t}
+  let mk=0,mu=0;
+  for(let i=1;i<=4;i++){
+    const t=u[i],el=scs[i-1];
+    el.style.visibility=t>0?'visible':'hidden';
+    el.style.opacity=t;
+    el.style.transform=RM?'none':'scale('+(1.14-.14*t)+')';
+    if(t>0&&t<1){mk=i;mu=t}
+  }
+  if(mk&&!RM){mist.style.opacity=(Math.sin(Math.PI*mu)*.92).toFixed(3);mist.style.transform='scale('+(1.22-.22*mu)+')'}else mist.style.opacity=0;
+  cards.forEach((c,i)=>{
+    const s0=c.firstElementChild;
+    const inn=i===0?1:clamp((u[i]-.55)/.45);
+    const out=i<4?clamp(u[i+1]/.35):0;
+    const o=inn*(1-out);
+    s0.style.opacity=o.toFixed(3);
+    s0.style.transform=RM?'none':'translateY('+((1-inn)*40-out*24).toFixed(1)+'px)';
+    c.classList.toggle('act',o>.6);
+  });
+  const a=Math.round(s);
+  dots.forEach((d,i)=>d.classList.toggle('on',i===a));
+  hint.style.opacity=p>.02?0:'';
+}
+function onScroll(){if(!dirty){dirty=true;requestAnimationFrame(apply)}}
+function onResize(){layout();onScroll()}
+window.addEventListener('scroll',onScroll,{passive:true});
+window.addEventListener('resize',onResize);
+
+
+rep.addEventListener('click',()=>replay());
+intro.addEventListener('click',e=>{
+  const b=e.target.closest('[data-dest]');
+  if(b){mark();if(window.bvBuscar)window.bvBuscar(b.getAttribute('data-dest'));return}
+  if(e.target.closest('[data-intro-home]')){e.preventDefault();leave()}
+});
+cur={leave:()=>{if(intro.isConnected)leave()},skipPlay:()=>{if(mode==='play'&&intro.isConnected){aborted=true;abortR();endState()}}};
+layout();apply();run();
+}
+function replay(){
+  if(cur)cur.leave();
+  const re=()=>{
+    const old=$('#intro');if(old)old.remove();
+    document.body.insertAdjacentHTML('afterbegin',TPL);
+    window.scrollTo(0,0);boot($('#intro'));
+  };
+  if(location.hash.replace('#','')!=='inicio'&&location.hash!==''){location.hash='#inicio';setTimeout(re,80)}else re();
+}
+window.addEventListener('hashchange',()=>{if(cur)cur.leave()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&cur)cur.skipPlay()});
+document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('.foot-intro'))replay()});
+})();
+</script>
+
+</body>
+</html>
