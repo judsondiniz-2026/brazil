@@ -1,0 +1,44 @@
+name: Publicar na Hostinger
+
+# A cada envio para a main, copia o site para a pasta /brazil do studio-katu.com via FTP.
+# Precisa dos segredos FTP_SERVER, FTP_USER e FTP_PASS (e, se preciso, FTP_DIR) em
+# Settings > Secrets and variables > Actions. Sem eles, o workflow termina sem fazer nada.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TEM_FTP: ${{ secrets.FTP_SERVER != '' && secrets.FTP_USER != '' && secrets.FTP_PASS != '' }}
+    steps:
+      - name: Baixar o código
+        if: env.TEM_FTP == 'true'
+        uses: actions/checkout@v4
+
+      - name: Enviar para a Hostinger
+        if: env.TEM_FTP == 'true'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          protocol: ftps
+          local-dir: ./
+          server-dir: ${{ secrets.FTP_DIR || './brazil/' }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            README.md
+
+      - name: Aviso quando faltam os segredos
+        if: env.TEM_FTP != 'true'
+        run: echo "Segredos FTP ainda não configurados. Nada foi enviado."
